@@ -155,7 +155,7 @@
         <div class="card mb-4 box-shadow">
           <img class="card-img-top" data-src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" style="" src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" data-holder-rendered="true">
           <h4 class="mb-0">
-            <a class="text-dark" href="#">Titulo Ejemplo</a>
+            <a class="text-dark" href="<?php the_permalink(); ?>">Titulo Ejemplo</a>
           </h4>
           <div class="card-body">
             <p class="card-text">This is a wider card with supporting text below
