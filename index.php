@@ -30,7 +30,7 @@
     <div class="row">
       <div class="col-md-6 col-sm-6 col-lg-3">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="" alt="Thumbnail [100%x225]" style="" src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" data-holder-rendered="true">
+          <img class="card-img-top" src="http://via.placeholder.com/254x170">
           <h4 class="mb-0">
             <a class="text-dark" href="#">Titulo Ejemplo</a>
           </h4>
@@ -47,7 +47,7 @@
       </div>
       <div class="col-md-6 col-sm-6 col-lg-3 ">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" style="" src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" data-holder-rendered="true">
+          <img class="card-img-top" style="" src="http://via.placeholder.com/254x170">
           <h4 class="mb-0">
             <a class="text-dark" href="#">Titulo Ejemplo</a>
           </h4>
@@ -64,7 +64,7 @@
       </div>
       <div class="col-md-6 col-sm-6 col-lg-3">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" style="" src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" data-holder-rendered="true">
+          <img class="card-img-top" style="" src="http://via.placeholder.com/254x170">
           <h4 class="mb-0">
             <a class="text-dark" href="#">Titulo Ejemplo</a>
           </h4>
@@ -81,7 +81,7 @@
       </div>
       <div class="col-md-6 col-sm-6 col-lg-3">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" style="" src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" data-holder-rendered="true">
+          <img class="card-img-top" style="" src="http://via.placeholder.com/254x170">
           <h4 class="mb-0">
             <a class="text-dark" href="#">Titulo Ejemplo</a>
           </h4>
@@ -102,7 +102,7 @@
     <div class="row">
       <div class="col-md-6 col-sm-6 col-lg-3">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="" alt="Thumbnail [100%x225]" style="" src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" data-holder-rendered="true">
+          <img class="card-img-top" data-src="" style="" src="http://via.placeholder.com/254x170">
           <h4 class="mb-0">
             <a class="text-dark" href="#">Titulo Ejemplo</a>
           </h4>
@@ -119,7 +119,7 @@
       </div>
       <div class="col-md-6 col-sm-6 col-lg-3 ">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" style="" src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" data-holder-rendered="true">
+          <img class="card-img-top" style="" src="http://via.placeholder.com/254x170">
           <h4 class="mb-0">
             <a class="text-dark" href="#">Titulo Ejemplo</a>
           </h4>
@@ -136,7 +136,7 @@
       </div>
       <div class="col-md-6 col-sm-6 col-lg-3">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" style="" src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" data-holder-rendered="true">
+          <img class="card-img-top" style="" src="http://via.placeholder.com/254x170">
           <h4 class="mb-0">
             <a class="text-dark" href="#">Titulo Ejemplo</a>
           </h4>
@@ -153,7 +153,7 @@
       </div>
       <div class="col-md-6 col-sm-6 col-lg-3">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" style="" src="http://localhost:8888/society/sherwin/wp-content/themes/sherwin/img/imagenExample.png" data-holder-rendered="true">
+          <img class="card-img-top" style="" src="http://via.placeholder.com/254x170">
           <h4 class="mb-0">
             <a class="text-dark" href="<?php the_permalink(); ?>">Titulo Ejemplo</a>
           </h4>
@@ -170,10 +170,6 @@
       </div>
     </div>
   </div>
-  <div class="imagen-parallax">
 
-  </div>
 </div>
-
-
 <?php get_footer();?>

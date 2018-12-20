@@ -1,19 +1,79 @@
 #RockNside{
-  
+
+
 #carouselExampleIndicators{
   .carousel-item{
     height: 400px;
   }
 }
 
-#contentNoticiasHome{
-.imagen-parallax{
-  background-image: url('http://localhost:8888/test/wp-content/themes/theme/images/concierto_uno.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
-  width: 1200px;
+#contenido-post{
+  .tam-imag{
+    height: 100%;
+    max-height: 135px;
+    @media(max-width: 991px){
+      max-height: 100px;
+    }
+    @media(max-width: 667px){
+      max-height: 250px;
+    }
+
   }
+  .container{
+    padding-bottom: 15px;
+  }
+  .embed-responsive {
+    @media (max-width: 767px){
+      margin-bottom: 10px;
+    }
+}
+  .contenedor-texto{
+    padding: 10px 10px;
+  }
+  .noticias-letrero{
+    border: 1px black solid;
+    color: #fff;
+    background: black;
+    &.instagram{
+      margin-top: 5px;
+    }
+  }
+  .stilo-cuadro-noticias-extras{
+    height: 80px;
+    .estilo-imagenes-tamano{
+      width: 100%;
+      max-width: 50px;
+      height: 100%;
+      max-height: 50px;
+    }
+    a{
+      font-size: 12px;
+    }
+    p{
+    &.date-estilo{
+      font-size: 10px;
+      }
+    }
+  }
+
+}
+
+#contentNoticiasHome{
+
+
+}
+
+#footer{
+
+
+
+  .imagen-parallax{
+    background-image: url('http://localhost/portal/wp-content/themes/rnnew/images/concierto_uno.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+
+    }
 }
 
 
