@@ -170,6 +170,7 @@
       </div>
     </div>
   </div>
+  <?php include('teest.php'); ?>
 
 </div>
 <?php get_footer();?>
