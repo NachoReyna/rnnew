@@ -2,20 +2,20 @@
   <div class="imagen-parallax">
 
   </div>
-  <footer class="footer">
+  <footer class="footer estilo-footer">
     <div class="container">
         <div class="row" align="center">
-          <div class="col-md-6 col-sm-4 col-lg-4">
+          <div class="col-md-12 col-sm-12 col-lg-4 margen-footer estilo-footer-izquierdo">
             <a href="#"><img src="" alt="">logo</a>
           </div>
-          <div class="col-md-6 col-sm-4 col-lg-4">
+          <div class="col-md-12 col-sm-12 col-lg-4 margen-footer estilo-footer-centro">
             <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
             <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
             <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
             <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
             <p>2018 © copyright | RockNside.com</p>
           </div>
-          <div class="col-md-6 col-sm-4 col-lg-4">
+          <div class="col-md-12 col-sm-12 col-lg-4 margen-footer estilo-footer-derecho">
             <!-- <div class="col-md-12 col-sm-12 col-lg-12">
               <h4 class="noticias-letrero">Facebook</h4>
               <?php echo do_shortcode( '[custom-facebook-feed]' ); ?>
