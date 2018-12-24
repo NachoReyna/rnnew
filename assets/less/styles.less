@@ -1,18 +1,64 @@
 #RockNside{
-  body{
-    font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Aleo', serif;
+#noticias{
+  .imagen-principal{
+    margin-bottom: 10px;
   }
-
-
+}
+#header{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background: #fff;
+  .links-header{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    a{
+      color: #000;
+      }
+    a:hover{
+      text-decoration: underline;
+      }
+    }
+    .tamano-logo{
+      width: 100%;
+      max-width: 130px;
+      }
+    .links-redes{
+      font-size: 30px;
+      color:#000;
+    }
+    a:hover{
+      color: #e9403f;
+      cursor: pointer;
+      -webkit-transition: color .5s ease-out;
+    }
+  }
 #carouselExampleIndicators{
+  .carousel-indicators .active {
+    background-color: #e73f3f;
+    }
   .carousel-item{
-    height: 400px;
+    height: 500px;
+    @media(max-width: 767px){
+    height: 230px;
+    }
+  }
+  .title-slider{
+    text-align: center;
+    position: relative;
+    bottom: 250px;
+    background: #00000099;
+    a{
+      color: #fff;
+    }
+    @media(max-width: 767px){
+      bottom: 100px;
+    }
   }
 }
 
 #contenido-post{
+  font-family: 'Montserrat', sans-serif;
   .tam-imag{
     height: 100%;
     max-height: 135px;
@@ -22,7 +68,6 @@ font-family: 'Aleo', serif;
     @media(max-width: 667px){
       max-height: 250px;
     }
-
   }
   .container{
     padding-bottom: 15px;
@@ -60,36 +105,60 @@ font-family: 'Aleo', serif;
       }
     }
   }
-
 }
-
 #contentNoticiasHome{
-
-
+  font-family: 'Montserrat', sans-serif;
+  .slider-youtube{
+    height: 510px;
+    background:#343a40;
+    @media(max-width: 767px){
+      height: 310px;
+    }
+  }
+.section-youtube{
+  font-family: 'Montserrat', sans-serif;
+  h1{
+    text-align: center;
+    color: #fff;
+    @media(max-width: 767px){
+      font-size: 20px;
+    }
+  }
+  span{
+    background: #343a40;
+    padding: 0px 5px;
+  }
+  .carouseles{
+    height: 420px;
+    touch-action: pan-y;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @media(max-width: 767px){
+      height: 220px;
+      }
+    }
+  }
 }
 
 #footer{
   .footer{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: #343a40;
-    color:#9e4949;
+    color:#e9403f;
     a{
-      color:#9e4949;
+      color:#e9403f;
     }
     .container{
       background: #343a40;
     }
   }
-
   .estilo-footer{
-    height: 150px;
+    //height: 150px;
   }
-
   .margen-footer{
     margin-top: 50px;
     &.estilo-footer-derecho{
       padding: 33px 0px;
-
     }
     &.estilo-footer-centro{
       padding: 0px 0px;
@@ -103,17 +172,12 @@ font-family: 'Aleo', serif;
       padding: 33px 0px;
     }
   }
-
-
-
   .imagen-parallax{
-    background-image: url('http://localhost/portal/wp-content/themes/rnnew/images/concierto_uno.jpg');
+    background-image: url('http://localhost/portal/wp-content/themes/rnnew/images/footer/guitarr_play.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
-
+    z-index: 100;
     }
-}
-
-
+  }
 }

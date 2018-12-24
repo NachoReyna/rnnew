@@ -31,30 +31,33 @@
 			<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url');?>/css/ie9.css">
         <![endif]-->
 		<title><?php bloginfo('name')?></title>
-		<header>
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<a class="navbar-brand" href="#">Navbar w/ text</a>
+		<header id="header">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light ">
+				<a class="navbar-brand" href="#"><img src="<?php bloginfo('template_url');?>/images/logos/rnsiders.png" width="40%" alt="" class="tamano-logo">	</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarText">
-					<ul class="navbar-nav mr-auto">
+					<ul class="navbar-nav mr-auto links-header">
 						<li class="nav-item active">
-							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="index">Inicio <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Features</a>
+							<a class="nav-link" href="noticias">Noticias</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Pricing</a>
+							<a class="nav-link" href="blog">Blog</a>
 						</li>
 					</ul>
 				<span class="navbar-text">
-				Navbar text with an inline element
+					<a class="links-redes" href="#"><i class="fab fa-facebook"></i></a>
+					<a class="links-redes" href="#"><i class="fab fa-instagram"></i></a>
+					<a class="links-redes" href="#"><i class="fab fa-youtube"></i></a>
+					<a class="links-redes" href="#"><i class="fab fa-twitter-square"></i></a>
 				</span>
 				</div>
 			</nav>
 		</header>
 		<?php wp_head(); ?>
 	</head>
-	<body id="RockNside">
+	<body id="RockNside" class="margen-body" style="margin-top: 50px;">

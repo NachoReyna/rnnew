@@ -1,12 +1,11 @@
 <div id="footer">
   <div class="imagen-parallax">
-
   </div>
   <footer class="footer estilo-footer">
     <div class="container">
         <div class="row" align="center">
           <div class="col-md-12 col-sm-12 col-lg-4 margen-footer estilo-footer-izquierdo">
-            <a href="#"><img src="" alt="">logo</a>
+            <a href="#"><img src="<?php bloginfo('template_url');?>/images/logos/rnsiders.png" width="40%" alt=""></a>
           </div>
           <div class="col-md-12 col-sm-12 col-lg-4 margen-footer estilo-footer-centro">
             <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
