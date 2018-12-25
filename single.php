@@ -1,34 +1,34 @@
 <?php get_header();?>
 <div id="contenido-post">
-  <div class="container">
-    <div class="row" align="center">
-      <div class="col-md-12 col-sm-12 col-lg-12 py-4">
-        <img src="http://localhost/portal/wp-content/themes/rnnew/images/concierto_uno.jpg" alt="" width="100%">
-      </div>
-    </div>
-    <div class="row no-gutters" align="center">
-      <!--Contenido del post-->
-    <div class="col-12 col-sm-12 col-md-9">
       <?php
       if ( have_posts() ) { 	while ( have_posts() ) { the_post();
         $video = get_field('video');
         $titulo = get_the_title();
         $contenido = get_the_content();
         ?>
-          <h2>
+        <div class="container">
+          <div class="row" align="center">
+            <div class="col-md-12 col-sm-12 col-lg-12 py-4">
+              <img src="<?php echo get_the_post_thumbnail_url(); ?> " alt="" width="100%">
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <!--Contenido del post-->
+          <div class="col-12 col-sm-12 col-md-9">
+          <h2 align="center">
             <?php echo $titulo; ?>
           </h2>
           <div class="contenedor-texto">
             <?php echo $contenido ?>
           </div>
-        <div class="embed-responsive embed-responsive-16by9">
+        <div class="embed-responsive embed-responsive-16by9" align="center">
           <iframe class="embed-responsive-item" src="<?php echo $video; ?>" allowfullscreen></iframe>
         </div>
       	<?php }//endwhile
       }//endif ?>
     </div>
     <!--Contenido extra como secciones de redes sociales etc-->
-    <div class="col-12 col-sm-12 col-md-3">
+    <div class="col-12 col-sm-12 col-md-3" align="center">
       <div class="col-md-12 col-sm-12 col-lg-12">
         <h4 class="noticias-letrero">Más Noticias</h4>
       </div>
