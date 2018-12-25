@@ -1,5 +1,5 @@
 <div id="footer">
-  <div class="imagen-parallax">
+  <div class="imagen-parallax" style="background-image: url(' <?php bloginfo('template_url');?>/images/footer/guitarr_play.jpg');">
   </div>
   <footer class="footer estilo-footer">
     <div class="container">
