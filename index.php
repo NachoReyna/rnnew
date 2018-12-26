@@ -10,24 +10,22 @@
           'order'   => 'DESC',
           'category' => 'noticias',
           'paged' => $paged,
-          'posts_per_page' => 12
+          'posts_per_page' => 11
         );
         $homeProductos = new WP_Query( $args );?>
         <?php if( $homeProductos->have_posts() ): ?>
         <?php  while( $homeProductos->have_posts() ) : $homeProductos-> the_post(); ?>
+          <?php $author = get_the_author(); ?>
           <div class="col-md-6 col-sm-6 col-lg-3">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top maximo-tamano" src="<?php echo get_the_post_thumbnail_url(); ?>">
-              <h4 class="mb-0">
-                <a class="text-dark" href=" <?php the_permalink(); ?>"><?php the_title();?></a>
-              </h4>
+            <div class="card mb-4 box-shadow sin-boders">
+              <div class="crop">
+                <a href=" <?php the_permalink(); ?>"><img class="card-img-top maximo-tamano" src="<?php echo get_the_post_thumbnail_url(); ?>"></a>
+              </div>
               <div class="card-body">
-                <p class="card-text"><?php echo excerpt(10); ?> </p>
-                  <div class="d-flex justify-content-end">
-                    <a href="#">
-                      <i class="fas fa-arrow-right fa-1x"></i>
-                    </a>
-                  </div>
+                <h4 class="mb-0 estilo-link-titulo">
+                  <a class="text-blanco" href=" <?php the_permalink(); ?>"><?php the_title();?></a>
+                </h4>
+                <p><?php echo $author;?> <br> <?php echo the_date(); ?>  </p>
               </div>
             </div>
           </div>
