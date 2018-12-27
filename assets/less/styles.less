@@ -119,12 +119,24 @@
 }
 
 #contenido-post{
-
+  .spotify-elemento{
+    width:247px;
+    height:380px;
+    @media(max-width: 767px){
+      width:340px;
+    }
+  }
+  .card-text{
+    .text-dark{
+          font-size: 1.7em;
+    }
+  }
       .estilo-noticias{
         height: 200px;
         background-size: cover;
         background-position: center center;
         border-radius: 0px;
+        background-repeat: no-repeat;
         a{
           color: #000;
         }
