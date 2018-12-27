@@ -8,10 +8,10 @@
             <a href="#"><img src="<?php bloginfo('template_url');?>/images/logos/rnsiders.png" width="40%" alt=""></a>
           </div>
           <div class="col-md-12 col-sm-12 col-lg-4 margen-footer estilo-footer-centro">
-            <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-            <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+            <a href="https://www.facebook.com/RockNside/"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href="https://www.instagram.com/rocknside/"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.youtube.com/rocknside"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="https://twitter.com/rocknside"><i class="fab fa-twitter-square fa-2x"></i></a>
             <p>2018 © copyright | RockNside.com</p>
           </div>
           <div class="col-md-12 col-sm-12 col-lg-4 margen-footer estilo-footer-derecho">

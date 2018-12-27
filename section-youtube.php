@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <div class="section-youtube">
-  <h1 class=""><span>Videos del canal de RockNside en YouTube</span> </h1>
+  <h1 class=""><span><i class="fab fa-youtube"></i> Videos nuestro canal</span></h1>
   <div class="carouseles">
     <div class="carousel-cell">
       <a target="_blank" href="http://bit.ly/2CxpFuE">

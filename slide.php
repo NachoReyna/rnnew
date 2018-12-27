@@ -6,15 +6,17 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-        <img class="d-block w-100" src="<?php bloginfo('template_url');?>/images/slider/gfyoutube.png" alt="Nuevo video RockNside">
-      <div class="title-slider">
-        <h2><a href="https://youtu.be/Q4MjT_018j0">Ya puedes ver el nuevo video de RockNside</a></h2>
-      </div>
+      <a target="_blank" href="https://youtu.be/Q4MjT_018j0"><img class="d-block w-100" src="<?php bloginfo('template_url');?>/images/slider/gfyoutube.png" alt="Nuevo video RockNside"></a>
+        <div class="carousel-caption d-none d-md-block fondo-largo">
+          <h5>Especial de Gran Funk Railroad</h5>
+          <p><a href="https://youtu.be/Q4MjT_018j0"> Ya puedes ver este especial y todos nuestros videos en nuestro canal</a></p>
+        </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="<?php bloginfo('template_url');?>/images/slider/audiencia.png" alt="">
-      <div class="title-slider">
-        <h2><a href="noticias">Ve las últimas noticias en el mundo de la música</a></h2>
+      <div class="carousel-caption d-none d-md-block fondo-largo">
+        <h5>Noticias</h5>
+        <p><a href="noticias"> Ve las últimas noticias en el mundo de la música</a></p>
       </div>
     </div>
     <!-- <div class="carousel-item">

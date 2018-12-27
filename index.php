@@ -6,7 +6,6 @@
         <?php $int = 1;
         $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
         $args = array(
-          'orderby' => 'desc',
           'order'   => 'DESC',
           'category' => 'noticias',
           'paged' => $paged,
@@ -16,11 +15,11 @@
         <?php if( $homeProductos->have_posts() ): ?>
         <?php  while( $homeProductos->have_posts() ) : $homeProductos-> the_post(); ?>
           <?php $author = get_the_author(); ?>
-          <div class="col-md-6 col-sm-6 col-lg-3">
+          <div class="col-md-6 col-sm-6 col-lg-4">
             <div class="card mb-4 box-shadow sin-boders">
-              <div class="crop">
-                <a href=" <?php the_permalink(); ?>"><img class="card-img-top maximo-tamano" src="<?php echo get_the_post_thumbnail_url(); ?>"></a>
-              </div>
+              <a href="<?php the_permalink(); ?>">
+                <div class="crop" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>')"></div>
+              </a>
               <div class="card-body">
                 <h4 class="mb-0 estilo-link-titulo">
                   <a class="text-blanco" href=" <?php the_permalink(); ?>"><?php the_title();?></a>

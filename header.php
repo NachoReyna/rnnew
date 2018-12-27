@@ -33,7 +33,7 @@
 		<title><?php bloginfo('name')?></title>
 		<header id="header">
 			<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light ">
-				<a class="navbar-brand" href="#"><img src="<?php bloginfo('template_url');?>/images/logos/rnsiders.png" width="40%" alt="" class="tamano-logo">	</a>
+				<a class="navbar-brand" href="index"><img src="<?php bloginfo('template_url');?>/images/logos/rnsiders.png" width="40%" alt="" class="tamano-logo">	</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -50,10 +50,10 @@
 						</li>
 					</ul>
 				<span class="navbar-text">
-					<a class="links-redes" href="#"><i class="fab fa-facebook"></i></a>
-					<a class="links-redes" href="#"><i class="fab fa-instagram"></i></a>
-					<a class="links-redes" href="#"><i class="fab fa-youtube"></i></a>
-					<a class="links-redes" href="#"><i class="fab fa-twitter-square"></i></a>
+					<a class="links-redes" href="https://www.facebook.com/RockNside/"><i class="fab fa-facebook"></i></a>
+					<a class="links-redes" href="https://www.instagram.com/rocknside/"><i class="fab fa-instagram"></i></a>
+					<a class="links-redes" href="https://www.youtube.com/rocknside"><i class="fab fa-youtube"></i></a>
+					<a class="links-redes" href="https://twitter.com/rocknside"><i class="fab fa-twitter-square"></i></a>
 				</span>
 				</div>
 			</nav>

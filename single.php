@@ -35,13 +35,12 @@
         <?php $the_query = new WP_Query( array( 'category_name' => 'noticias', 'posts_per_page' => 6 ) );?>
         <?php if ( $the_query->have_posts() ) : ?>
         <?php while ( $the_query->have_posts() ) : $the_query->the_post();?>
-
+          <?php $author = get_the_author(); ?>
           <div class="col-md-12 col-sm-12 col-lg-12">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-right  d-md-block tam-imag" src="<?php the_post_thumbnail_url(); ?>">
-              <div class="card-body">
-                <a class="text-dark" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
-              </div>
+            <div class="card mb-4 box-shadow estilo-noticias" style="background-image:url('<?php the_post_thumbnail_url(); ?>')"></div>
+            <div class="card-body">
+              <a class="text-dark" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
+              <p><?php echo $author;?> <br> <?php echo the_date(); ?>  </p>
             </div>
 
           </div>
