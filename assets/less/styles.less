@@ -119,11 +119,17 @@
 }
 
 #contenido-post{
+  .autor-nota{
+    font-size: .9em;
+    span{
+      color:#ff2b2b;
+    }
+  }
   .spotify-elemento{
     width:247px;
     height:380px;
     @media(max-width: 767px){
-      width:340px;
+      width:250px;
     }
   }
   .card-text{
@@ -161,13 +167,14 @@
 }
   .contenedor-texto{
     padding: 10px 10px;
+    margin: 5px 5px;
+    font-size: 1.3em;
+    text-align: justify;
   }
   .noticias-letrero{
     text-transform: uppercase;
     font-weight: bold;
-    border: 1px black solid;
     color: #ff2c2b;
-    background: black;
     padding: 7px 0px;
     &.instagram{
       margin-top: 5px;
