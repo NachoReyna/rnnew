@@ -2,6 +2,10 @@
 <div id="contentNoticiasHome">
   <?php include('slide.php'); ?>
     <div class="container album py-4" align="center">
+      <hr>
+      <div class="titulo-inicio" align="left">
+        <h1>Noticias</h1>
+      </div>
       <div class="row">
         <?php $int = 1;
         $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;

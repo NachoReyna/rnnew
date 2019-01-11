@@ -3,6 +3,10 @@
       <?php
       if ( have_posts() ) { 	while ( have_posts() ) { the_post();
         $video = get_field('video');
+        $video_dos = get_field('video_dos');
+        $video_tres = get_field('video_tres');
+        $spotify = get_field('spotify');
+        $spotify_texto = get_field('spotify_texto');
         $titulo = get_the_title();
         $author = get_the_author();
         ?>
@@ -24,22 +28,52 @@
         <?php the_content(); ?>
       </div>
       <?php if($video){?>
-        <div class="embed-responsive embed-responsive-16by9" align="center">
-          <iframe class="embed-responsive-item" src="<?php echo $video; ?>" allowfullscreen></iframe>
+        <div class="embed-responsive embed-responsive-16by9 my-4" align="center">
+          <?php echo $video; ?>
         </div>
         <?php } ?>
-        <?php if($sporify){?>
-          <div class="embed-responsive embed-responsive-16by9" align="center">
-            <iframe class="embed-responsive-item" src="<?php echo $video; ?>" allowfullscreen></iframe>
-          </div>
+        <?php if($video_dos){?>
+        <div class="embed-responsive embed-responsive-16by9 my-4" align="center">
+          <?php echo $video_dos; ?>
+        </div>
+        <?php } ?>
+        <?php if($video_tres){?>
+        <div class="embed-responsive embed-responsive-16by9 my-4" align="center">
+          <?php echo $video_tres; ?>
+        </div>
+        <?php } ?>
+        <?php if($spotify){?>
+            <p><?php echo $spotify_texto; ?></p>
+            <div class="col-md-12 col-sm-12 col-lg-12 my-4" class="elemnto-spotify-post" align="center">
+              <?php echo $spotify; ?>
+            </div>
           <?php } ?>
+          <div class="col-md-12 col-sm-12 col-lg-12" align="center">
+            <?php
+            $posttags = get_the_tags();
+            if ($posttags) {
+              foreach($posttags as $tag) {
+                ?>
+
+                <span class="estilo-tags-single">
+                <a href="<?php echo get_tag_link($tag->term_id); ?>">
+                  <?php echo $tag->name; ?>
+                </a>
+                </span>
+                <?php
+              }
+            }
+            ?>
+
+          </div>
       <?php }//endwhile
       }//endif ?>
     </div>
     <!--Contenido extra como secciones de redes sociales etc-->
     <div class="col-12 col-sm-12 col-md-3" align="center">
+      <h4 class="noticias-letrero">Escucha RockNside en Spotify</h4>
       <div class="col-md-12 col-sm-12 col-lg-12">
-        <iframe src="https://open.spotify.com/user/bye83q42d2u9vooxycaswwd2w/playlist/4dA8OfAU1nnLJUPeXWSSKI?si=CZ2MexqwTE2psKQKcjuaoA" class="spotify-elemento"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/user/bye83q42d2u9vooxycaswwd2w/playlist/4dA8OfAU1nnLJUPeXWSSKI" class="spotify-elemento"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
       <div class="col-md-12 col-sm-12 col-lg-12">
         <h4 class="noticias-letrero">Más Noticias</h4>
@@ -52,7 +86,7 @@
             <div class="card box-shadow estilo-noticias" style="background-image:url('<?php the_post_thumbnail_url(); ?>')"></div>
             <div class="card-body card-text">
               <a class="text-dark" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
-              <p><?php echo $author;?> <br> <?php echo the_date(); ?>  </p>
+              <p class="text-parr"><?php echo $author;?> <br> <?php echo the_date(); ?>  </p>
             </div>
           </div>
         <?php endwhile; ?>
