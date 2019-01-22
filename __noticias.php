@@ -1,17 +1,16 @@
 <?php
-	/* Template Name: Blog */
 get_header();?>
-<div id="blog">
+<div id="noticias">
   <div class="container album py-4" align="center">
     <div class="imagen-principal">
-      <img src="<?php bloginfo('template_url');?>/images/section/blog.jpg" class="img-fluid" alt="Responsive image">
+      <img src="<?php bloginfo('template_url');?>/images/section/noticias.jpg" class="img-fluid" alt="Responsive image">
     </div>
     <div class="row">
       <?php $int = 1;
       $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
       $args = array(
         'order'   => 'DESC',
-        'category_name' => 'blog',
+        'category_name' => 'noticias',
         'paged' => $paged,
         'posts_per_page' => 11
       );

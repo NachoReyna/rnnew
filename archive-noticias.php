@@ -1,5 +1,4 @@
 <?php
-	/* Template Name: Noticias */
 get_header();?>
 <div id="noticias">
   <div class="container album py-4" align="center">
@@ -11,7 +10,7 @@ get_header();?>
       $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
       $args = array(
         'order'   => 'DESC',
-        'category_name' => 'noticias',
+        'post_type' => 'noticias',
         'paged' => $paged,
         'posts_per_page' => 11
       );

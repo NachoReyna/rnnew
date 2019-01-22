@@ -18,6 +18,7 @@
 		<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url');?>/css/generals.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Aleo|Montserrat|Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 		<!--[if IE 6]>
 			<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url');?>/css/ie6.css">
         <![endif]-->
@@ -32,7 +33,7 @@
         <![endif]-->
 		<title><?php bloginfo('name')?></title>
 		<header id="header">
-			<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light ">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light shadow-sm p-3 mb-5 bg-white rounded">
 				<a class="navbar-brand" href="index"><img src="<?php bloginfo('template_url');?>/images/logos/rnsiders.png" width="40%" alt="" class="tamano-logo">	</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -40,13 +41,13 @@
 				<div class="collapse navbar-collapse" id="navbarText">
 					<ul class="navbar-nav mr-auto links-header">
 						<li class="nav-item active">
-							<a class="nav-link" href="index">Inicio <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="noticias">Noticias</a>
+							<a class="nav-link" href="/noticias">Noticias</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="blog">Blog</a>
+							<a class="nav-link" href="/blog">Blog</a>
 						</li>
 					</ul>
 				<span class="navbar-text">

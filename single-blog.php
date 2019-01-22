@@ -20,54 +20,55 @@
   <!--Contenido del post-->
     <div class="col-12 col-sm-12 col-md-9">
       <h1 align="center"><?php echo $titulo; ?></h1>
-
       <div class="contenedor-texto">
         <div class="autor-nota">
           <p>Por <?php echo $author; ?> <span>|</span>  <?php echo the_date(); ?> </p>
         </div>
-        <?php the_content(); ?>
-      </div>
-      <?php if($video){?>
-        <div class="embed-responsive embed-responsive-16by9 my-4" align="center">
-          <?php echo $video; ?>
+        <div class="links-contenido">
+          <?php the_content(); ?>
         </div>
-        <?php } ?>
-        <?php if($video_dos){?>
-        <div class="embed-responsive embed-responsive-16by9 my-4" align="center">
-          <?php echo $video_dos; ?>
-        </div>
-        <?php } ?>
-        <?php if($video_tres){?>
-        <div class="embed-responsive embed-responsive-16by9 my-4" align="center">
-          <?php echo $video_tres; ?>
-        </div>
-        <?php } ?>
-        <?php if($spotify){?>
-            <p><?php echo $spotify_texto; ?></p>
-            <div class="col-md-12 col-sm-12 col-lg-12 my-4" class="elemnto-spotify-post" align="center">
-              <?php echo $spotify; ?>
-            </div>
-          <?php } ?>
-          <div class="col-md-12 col-sm-12 col-lg-12" align="center">
-            <?php
-            $posttags = get_the_tags();
-            if ($posttags) {
-              foreach($posttags as $tag) {
-                ?>
-
-                <span class="estilo-tags-single">
-                <a href="<?php echo get_tag_link($tag->term_id); ?>">
-                  <?php echo $tag->name; ?>
-                </a>
-                </span>
-                <?php
-              }
-            }
-            ?>
-
+        <?php if($video){?>
+          <div class="embed-responsive embed-responsive-16by9 my-4" align="center">
+            <?php echo $video; ?>
           </div>
-      <?php }//endwhile
-      }//endif ?>
+          <?php } ?>
+          <?php if($video_dos){?>
+          <div class="embed-responsive embed-responsive-16by9 my-4" align="center">
+            <?php echo $video_dos; ?>
+          </div>
+          <?php } ?>
+          <?php if($video_tres){?>
+          <div class="embed-responsive embed-responsive-16by9 my-4" align="center">
+            <?php echo $video_tres; ?>
+          </div>
+          <?php } ?>
+          <?php if($spotify){?>
+              <p><?php echo $spotify_texto; ?></p>
+              <div class="col-md-12 col-sm-12 col-lg-12 my-4" class="elemnto-spotify-post" align="center">
+                <?php echo $spotify; ?>
+              </div>
+            <?php } ?>
+            <div class="col-md-6 col-sm-12 col-lg-12" align="center">
+              <h4 class="noticias-letrero">TAGS</h4>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-12" align="center">
+              <?php
+              $posttags = get_the_tags();
+              if ($posttags) {
+                foreach($posttags as $tag) {
+                  ?>
+                  <a class="estilo-tags-single" href="<?php echo get_tag_link($tag->term_id); ?>">
+                    <?php echo $tag->name; ?>
+                  </a>
+                  <?php
+                }
+              }
+              ?>
+            </div>
+        <?php }//endwhile
+        }//endif ?>
+      </div>
+
     </div>
     <!--Contenido extra como secciones de redes sociales etc-->
     <div class="col-12 col-sm-12 col-md-3" align="center">

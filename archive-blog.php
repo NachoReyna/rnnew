@@ -1,20 +1,16 @@
 <?php
-	/* Template Name:  */
-get_header();
-?>
-<div id="noticias">
+get_header();?>
+<div id="blog">
   <div class="container album py-4" align="center">
     <div class="imagen-principal">
-      <img src="<?php bloginfo('template_url');?>/images/section/noticias.jpg" class="img-fluid" alt="Responsive image">
+      <img src="<?php bloginfo('template_url');?>/images/section/blog.jpg" class="img-fluid" alt="Responsive image">
     </div>
     <div class="row">
-      <?php
-      $nombreTag = get_tag_link();
-      $int = 1;
+      <?php $int = 1;
       $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
       $args = array(
         'order'   => 'DESC',
-        'tag' => $nombreTag,
+        'post_type' => 'blog',
         'paged' => $paged,
         'posts_per_page' => 11
       );
