@@ -47,7 +47,7 @@
 							<a class="nav-link" href="/noticias">Noticias</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="/blog">Blog</a>
+							<a class="nav-link" href="blog">Blog</a>
 						</li>
 					</ul>
 				<span class="navbar-text">
