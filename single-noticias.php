@@ -79,6 +79,28 @@
       <div class="col-md-12 col-sm-12 col-lg-12">
         <h4 class="noticias-letrero">Más Noticias</h4>
       </div>
+
+      <div class="col-md-12 col-sm-12 col-lg-12">
+        <a href="https://www.youtube.com/watch?v=SVn3lV6XxVY" data-lity class="">
+        <div class="recipe-video-overlay " >
+        </div>
+        <div class="recipe-video-overlay-dos ">
+        </div>
+      </a>
+
+      </div>
+      <div class="col-md-12 col-sm-12 col-lg-12">
+        <div class="recipe-video-overlay">
+          <a href="https://youtu.be/D95tJwBrPCk" data-lity>
+            <img src="http://localhost/portal/wp-content/uploads/2019/01/maxresdefault-1.jpg" alt="" width="100%">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-sm-12 col-lg-12">
+        <h4 class="noticias-letrero">Más Noticias</h4>
+      </div>
+
         <?php $the_query = new WP_Query( array( 'category_name' => 'noticias', 'posts_per_page' => 3 ) );?>
         <?php if ( $the_query->have_posts() ) : ?>
         <?php while ( $the_query->have_posts() ) : $the_query->the_post();?>

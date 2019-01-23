@@ -121,6 +121,38 @@
 }
 
 #contenido-post{
+
+.recipe-video-overlay-dos:hover {
+  opacity:1;
+}
+.recipe-video-overlay:hover {
+  opacity:0;
+}
+.recipe-video-overlay-dos{
+  background-image:url('http://localhost/portal/wp-content/uploads/2019/01/maxresdefault-1.jpg');
+  background-size: cover;
+  background-position: center center;
+  border-radius: 0px;
+  background-repeat: no-repeat;
+  width:250px;
+  height:140px;
+  margin-bottom: 10px;
+  position:absolute;top:0;left:50%;opacity:0;
+ -webkit-transition: opacity 1s ease-in-out;
+ transform: translateX(-50%);
+}
+  .recipe-video-overlay{
+    background-image:url('http://localhost/portal/wp-content/uploads/2019/01/maxresdefault.jpg');
+    background-size: cover;
+    opacity:1; -webkit-transition: opacity 1s ease-in-out;
+    background-position: center center;
+    border-radius: 0px;
+    background-repeat: no-repeat;
+    width:250px;
+    height:140px;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
   .estilo-tags-single{
     font-family: 'Anton', sans-serif;
     border: 3px solid #010101;
