@@ -72,6 +72,58 @@
     </div>
     <!--Contenido extra como secciones de redes sociales etc-->
     <div class="col-12 col-sm-12 col-md-3" align="center">
+      <div class="col-md-12 col-sm-12 col-lg-12">
+        <h4 class="noticias-letrero">Esto puede interesarte</h4>
+      </div>
+      <?php $the_query = new WP_Query( array(
+        'category_name' => 'noticias',
+        'posts_per_page' => 3 ) );?>
+      <?php if ( $the_query->have_posts() ) : ?>
+      <?php while ( $the_query->have_posts() ) : $the_query->the_post();?>
+        <?php $author = get_the_author(); ?>
+        <div class="col-md-12 col-sm-12 col-lg-12">
+          <div class="card box-shadow estilo-noticias" style="background-image:url('<?php the_post_thumbnail_url(); ?>')"></div>
+          <div class="card-body card-text">
+            <a class="text-dark" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
+            <p class="text-parr"><?php echo $author;?> <br> <?php echo the_date(); ?>  </p>
+          </div>
+        </div>
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(); ?>
+      <?php else : ?>
+      <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+      <?php endif; ?>
+
+      <div class="col-md-12 col-sm-12 col-lg-12 bordes-estilos-youtube-videos">
+        <div class="estilo-youtube-videos" style="background-image:url('https://rocknside.com/wp-content/uploads/2019/01/maxresdefault.jpg');"></div>
+        <div class="overlays">
+          <div class="texts" ><a href="https://www.youtube.com/watch?v=x05Em-T7Ipg" data-lity>Ver Video</a> </div>
+        </div>
+      </div>
+
+      <!-- <div class="col-md-12 col-sm-12 col-lg-12">
+        <div class="containers">
+          <img src="https://rocknside.com/wp-content/uploads/2019/01/maxresdefault.jpg" alt="Avatar" class="imagesa" width="">
+          <div class="overlays">
+            <div class="texts" > <a href="https://www.youtube.com/watch?v=SVn3lV6XxVY&t=179s " data-lity>Ver Video</a> </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-sm-12 col-lg-12">
+        <hr>
+      </div>
+      <div class="col-md-12 col-sm-12 col-lg-12">
+        <div class="containers">
+          <img src="https://rocknside.com/wp-content/uploads/2019/01/maxresdefault-1.jpg" alt="Avatar" class="imagesa" width="">
+          <div class="overlays">
+            <div class="texts" > <a href="https://www.youtube.com/watch?v=x05Em-T7Ipg" data-lity>Ver Video</a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-12 col-lg-12">
+        <hr>
+      </div> -->
       <h4 class="noticias-letrero">Escucha RockNside en Spotify</h4>
       <div class="col-md-12 col-sm-12 col-lg-12">
         <iframe src="https://open.spotify.com/embed/user/bye83q42d2u9vooxycaswwd2w/playlist/4dA8OfAU1nnLJUPeXWSSKI" class="spotify-elemento"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -79,28 +131,6 @@
       <div class="col-md-12 col-sm-12 col-lg-12">
         <h4 class="noticias-letrero">Más Noticias</h4>
       </div>
-
-      <div class="col-md-12 col-sm-12 col-lg-12">
-        <a href="https://www.youtube.com/watch?v=SVn3lV6XxVY" data-lity class="">
-        <div class="recipe-video-overlay " >
-        </div>
-        <div class="recipe-video-overlay-dos ">
-        </div>
-      </a>
-
-      </div>
-      <div class="col-md-12 col-sm-12 col-lg-12">
-        <div class="recipe-video-overlay">
-          <a href="https://youtu.be/D95tJwBrPCk" data-lity>
-            <img src="http://localhost/portal/wp-content/uploads/2019/01/maxresdefault-1.jpg" alt="" width="100%">
-          </a>
-        </div>
-      </div>
-
-      <div class="col-md-12 col-sm-12 col-lg-12">
-        <h4 class="noticias-letrero">Más Noticias</h4>
-      </div>
-
         <?php $the_query = new WP_Query( array( 'category_name' => 'noticias', 'posts_per_page' => 3 ) );?>
         <?php if ( $the_query->have_posts() ) : ?>
         <?php while ( $the_query->have_posts() ) : $the_query->the_post();?>

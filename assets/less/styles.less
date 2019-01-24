@@ -121,32 +121,81 @@
 }
 
 #contenido-post{
-
-.recipe-video-overlay-dos:hover {
-  opacity:1;
-}
-.recipe-video-overlay:hover {
-  opacity:0;
-}
-.recipe-video-overlay-dos{
-  background-image:url('http://localhost/portal/wp-content/uploads/2019/01/maxresdefault-1.jpg');
-  background-size: cover;
-  background-position: center center;
-  border-radius: 0px;
-  background-repeat: no-repeat;
-  width:250px;
-  height:140px;
-  margin-bottom: 10px;
-  position:absolute;top:0;left:50%;opacity:0;
- -webkit-transition: opacity 1s ease-in-out;
- transform: translateX(-50%);
-}
-  .recipe-video-overlay{
-    background-image:url('http://localhost/portal/wp-content/uploads/2019/01/maxresdefault.jpg');
+  .bordes-estilos-youtube-videos{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .estilo-youtube-videos{
+      display: block;
     background-size: cover;
-    opacity:1; -webkit-transition: opacity 1s ease-in-out;
     background-position: center center;
-    border-radius: 0px;
+    background-repeat: no-repeat;
+    height: 200px;
+  }
+
+  .imagesa {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    @media(max-width: 767px){
+      max-width: 300px;
+      max-height: 300px;
+    }
+    @media(max-width: 991px){
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+
+  .overlays {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 39px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ba0000b0;
+    @media(max-width: 767px){
+        left: 35px;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    @media(max-width: 991px){
+      left: 15px;
+      max-width: 143px;
+      max-height: 300px;
+    }
+  }
+
+  .containers:hover .overlays {
+    opacity: 1;
+  }
+
+  .texts {
+    color: white;
+ font-size: 20px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ -webkit-transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+ text-align: center;
+    a{
+      color: #fff;
+    }
+  }
+
+  .recipe-video-overlay{
+    background-image:url('https://rocknside.com/wp-content/uploads/2019/01/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     width:250px;
     height:140px;

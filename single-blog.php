@@ -80,14 +80,19 @@
         <iframe src="https://open.spotify.com/embed/user/bye83q42d2u9vooxycaswwd2w/playlist/4dA8OfAU1nnLJUPeXWSSKI" class="spotify-elemento"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
       <div class="col-md-12 col-sm-12 col-lg-12">
+
+
+        
         <div class="recipe-video-youtube">
           <div class="player-button">
               <i class="fas fa-play"></i>
               <a href="https://www.youtube.com/watch?v=C9WtBo9b3WI" data-lity>
-              <img src="http://localhost:8888/test/wp-content/uploads/2018/12/1.jpg" alt="" width="100%">
+              <img src="https://rocknside.com/wp-content/uploads/2019/01/maxresdefault.jpg" alt="" width="100%">
             </a>
           </div>
         </div>
+
+
       </div>
       <div class="col-md-12 col-sm-12 col-lg-12">
         <h4 class="noticias-letrero">Más Noticias</h4>
@@ -103,7 +108,6 @@
               <p class="text-parr"><?php echo $author;?> <br> <?php echo the_date(); ?>  </p>
             </div>
           </div>
-
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
         <?php else : ?>
@@ -113,7 +117,6 @@
           <h4 class="noticias-letrero instagram">Instagram</h4>
           <?php echo do_shortcode( '[insta-gallery id="1"]' ); ?>
         </div>
-
       </div>
     </div>
   </div>
