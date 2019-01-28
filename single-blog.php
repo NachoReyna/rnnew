@@ -20,7 +20,7 @@
   <div class="row no-gutters">
   <!--Contenido del post-->
     <div class="col-12 col-sm-12 col-md-9">
-      <h1 align="center"><?php echo $titulo; ?></h1>
+      <h2 align="center"><?php echo $titulo; ?></h2>
       <div class="contenedor-texto">
         <div class="autor-nota">
           <p>Por <?php echo $author; ?> <span>|</span>  <?php echo the_date(); ?> </p>
@@ -82,7 +82,7 @@
       <div class="col-md-12 col-sm-12 col-lg-12">
 
 
-        
+
         <div class="recipe-video-youtube">
           <div class="player-button">
               <i class="fas fa-play"></i>

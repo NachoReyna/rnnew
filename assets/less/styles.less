@@ -1,9 +1,68 @@
 #RockNside{
-#blog{
-  .card-text{
-    font-size: 15px;
-    text-align: justify;
+  .tamano-logo{
+    width: 100%;
+    max-width: 130px;
     }
+  .crop{
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    }
+    .sin-boders{
+      border: 0px;
+      }
+  .imagen-principal{
+    width: 1110px;
+    height: 230px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center center;
+      .titulos-secciones{
+        color: #fff;
+        top: 150px;
+        right: 450px;
+        position: relative;
+        h1{
+          font-size: 50px;
+        }
+      }
+  }
+  .card-text{
+    width: 300px;
+    font-size: 17px;
+    color:#888888;
+    &.card-body {
+      padding: .5rem;
+    }
+    .text-dark{
+      font-size: 1em;
+      color:#888888;
+    }
+    p{
+      &.text-parr{
+        font-size: .7em;
+        }
+      }
+    }
+
+    .tipo-letra{
+      font-family: 'Anton', sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      a{
+        color: #000;
+        font-weight: normal;
+        font-size: 25px;
+        }
+      a:hover{
+        text-decoration: none;
+        }
+      }
+#blog{
+
   .maximo-tamano{
     width: 100%;
     height: 100%;
@@ -14,25 +73,13 @@
       color: #5d5d5d;
       }
     }
-    .crop{
-      width: 250px;
-      height: 160px;
-      overflow: hidden;
-      background-size: cover;
-      background-position: center center;
-      }
-    .sin-boders{
-      border: 0px;
-      }
+
+
   .imagen-principal{
     margin-bottom: 10px;
   }
 }
 #noticias{
-  .card-text{
-    font-size: 15px;
-    text-align: justify;
-    }
   .maximo-tamano{
     width: 100%;
     height: 100%;
@@ -43,41 +90,10 @@
     color: #5d5d5d;
     }
   }
-    .crop{
-      width: 250px;
-      height: 160px;
-      overflow: hidden;
-      background-size: cover;
-      background-position: center center;
-      }
-    .sin-boders{
-      border: 0px;
-      }
-  .imagen-principal{
-    margin-bottom: 10px;
-  }
+
+
 }
 #header{
-  font-family: 'Anton', sans-serif;
-  text-align: center;
-  background: #fff;
-  .links-header{
-    font-weight: bold;
-    font-size: 20px;
-    a{
-      color: #000;
-      color: #000;
-      font-weight: normal;
-      font-size: 25px;
-      }
-    a:hover{
-      text-decoration: none;
-      }
-    }
-    .tamano-logo{
-      width: 100%;
-      max-width: 130px;
-      }
     .links-redes{
       font-size: 30px;
       color:#000;
@@ -121,18 +137,25 @@
 }
 
 #contenido-post{
+  .titulo-principal{
+    @media(max-width: 767px){
+      font-size: 1.5em;
+    }
+  }
+  .card-body{
+    padding: 10px;
+  }
   .bordes-estilos-youtube-videos{
     margin-top: 10px;
     margin-bottom: 10px;
   }
   .estilo-youtube-videos{
-      display: block;
+    height: 150px;
+    display: block;
     background-size: cover;
-    background-position: center center;
     background-repeat: no-repeat;
-    height: 200px;
+    background-position: center center;
   }
-
   .imagesa {
     width: 100%;
     height: 100%;
@@ -229,18 +252,7 @@
       width:250px;
     }
   }
-  .card-text{
-    color:#888888;
-    .text-dark{
-      font-size: 1em;
-      color:#888888;
-    }
-    p{
-      &.text-parr{
-        font-size: .7em;
-        }
-      }
-    }
+
     .estilo-noticias{
       height: 200px;
       background-size: cover;
@@ -290,7 +302,6 @@
   }
   .noticias-letrero{
     font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
     color: @rojoRockNside;
     padding: 7px 0px;
     &.instagram{
@@ -336,12 +347,6 @@
       height: 310px;
     }
   }
-  .card-text{
-    font-size: 15px;
-    text-align: justify;
-
-
-    }
   .maximo-tamano{
     width: 100%;
     height: 100%;
@@ -352,16 +357,7 @@
     color: #5d5d5d;
     }
   }
-  .crop{
-    width: 250px;
-    height: 160px;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
-    }
-  .sin-boders{
-    border: 0px;
-    }
+
   .section-youtube{
     border-top: 4px @rojoRockNside solid;
     font-family: 'Montserrat', sans-serif;

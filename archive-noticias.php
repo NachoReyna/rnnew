@@ -2,8 +2,10 @@
 get_header();?>
 <div id="noticias">
   <div class="container album py-4" align="center">
-    <div class="imagen-principal">
-      <img src="<?php bloginfo('template_url');?>/images/section/noticias.jpg" class="img-fluid" alt="Responsive image">
+    <div class="imagen-principal" style="background-image:url('<?php bloginfo('template_url');?>/images/section/noticias.jpg');">
+      <div class="titulos-secciones">
+        <h1 class="tipo-letra">Noticias</h1>
+      </div>
     </div>
     <div class="row">
       <?php $int = 1;
@@ -23,11 +25,9 @@ get_header();?>
             <a href="<?php the_permalink(); ?>">
               <div class="crop" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>')"></div>
             </a>
-            <div class="card-body">
-              <h4 class="mb-0 estilo-link-titulo">
-                <a class="text-blanco" href=" <?php the_permalink(); ?>"><?php the_title();?></a>
-              </h4>
-              <p><?php echo $author;?> <br> <?php echo the_date(); ?>  </p>
+            <div class="card-body card-text">
+              <a class="text-dark" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
+              <p class="text-parr"> <?php echo the_date(); ?>  </p>
             </div>
           </div>
         </div>
