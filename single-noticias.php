@@ -24,7 +24,7 @@
         <div class="autor-nota">
           <p>Por <?php echo $author; ?> <span>|</span>  <?php echo the_date(); ?> </p>
         </div>
-        <div class="links-contenido">
+        <div class="links-contenido videos-youtube">
           <?php the_content(); ?>
         </div>
         <?php if($video){?>
