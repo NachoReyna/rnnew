@@ -14,7 +14,6 @@
       border: 0px;
       }
   .imagen-principal{
-    width: 1110px;
     height: 230px;
     overflow: hidden;
     margin-bottom: 10px;
@@ -23,15 +22,27 @@
       .titulos-secciones{
         color: #fff;
         top: 150px;
-        right: 450px;
+        right: 430px;
         position: relative;
         h1{
           font-size: 50px;
         }
+        @media(max-width: 1199px){
+          right: 340px;
+        }
+        @media(max-width: 991px){
+          right: 220px;
+        }
+        @media(max-width: 767px){
+          right: 125px;
+        }
+        @media(max-width: 539px){
+          right: 60px;
+        }
       }
   }
   .card-text{
-    width: 300px;
+    width: 240px;
     font-size: 17px;
     color:#888888;
     &.card-body {

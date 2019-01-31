@@ -2,9 +2,11 @@
 get_header();?>
 <div id="noticias">
   <div class="container album py-4" align="center">
-    <div class="imagen-principal" style="background-image:url('<?php bloginfo('template_url');?>/images/section/noticias.jpg');">
-      <div class="titulos-secciones">
-        <h1 class="tipo-letra">Noticias</h1>
+    <div class="col-md-12 col-sm-12 col-lg-12">
+      <div class="imagen-principal" style="background-image:url('<?php bloginfo('template_url');?>/images/section/noticias.jpg');">
+        <div class="titulos-secciones">
+          <h1 class="tipo-letra">Noticias</h1>
+        </div>
       </div>
     </div>
     <div class="row">
