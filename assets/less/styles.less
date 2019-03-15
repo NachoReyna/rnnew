@@ -1,447 +1,457 @@
-#RockNside{
-  .tamano-logo{
-    width: 100%;
-    max-width: 130px;
+#RockNside {
+  .bg-white{
+    background-color: black !important;
+  }
+
+  .letras-header{
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+  }
+  .letras-texto{
+
+  }
+
+  .letras-titulos{
+
+  }
+
+
+  #section-slide-inicio{
+      margin-top: 100px;
+
+  }
+
+
+
+  .estilo-menu-desplegable{
+    text-align: center;
+    font-size: 15px;
+  }
+
+    .tamano-logo {
+        width: 100%;
+        max-width: 130px;
     }
-  .crop{
-    width: 300px;
-    height: 160px;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
+    .margen-secciones-interiores {
+        margin-top: 70px;
     }
-    .sin-boders{
-      border: 0px;
-      }
-  .imagen-principal{
-    height: 230px;
-    overflow: hidden;
-    margin-bottom: 10px;
-    background-size: cover;
-    background-position: center center;
-      .titulos-secciones{
-        color: #fff;
-        top: 150px;
-        right: 430px;
+    .crop {
+        height: 160px;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+    }
+    .sin-boders {
+        border: 0px;
+    }
+    .imagen-principal {
+        height: 200px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        background-size: cover;
+        background-position: center center;
         position: relative;
-        h1{
-          font-size: 50px;
+        .titulos-secciones {
+            color: #fff;
+            position: absolute;
+            left: 2px;
+            right: 0;
+            bottom: 0;
+            h1 {
+                font-size: 50px;
+            }
         }
-        @media(max-width: 1199px){
-          right: 340px;
+    }
+    .text-titulo-notas {
+        font-size: 1em;
+        color: #000000 !important;
+    }
+    .card-text {
+        font-size: 17px;
+        color: #888888;
+        &.card-body {
+            padding: .5rem;
         }
-        @media(max-width: 991px){
-          right: 220px;
+        p {
+            &.text-parr {
+                font-size: .7em;
+            }
         }
-        @media(max-width: 767px){
-          right: 125px;
+    }
+
+    #blog {
+        .maximo-tamano {
+            width: 100%;
+            height: 100%;
+            margin: 0;
         }
-        @media(max-width: 539px){
-          right: 60px;
+        .estilo-link-titulo {
+            a {
+                color: #5d5d5d;
+            }
         }
-      }
+        .imagen-principal {
+            margin-bottom: 10px;
+        }
+    }
+#noticias {
+  margin-top: 100px;
+  .estilos-texto {
+    text-align: center;
   }
-  .card-text{
-    width: 240px;
-    font-size: 17px;
-    color:#888888;
-    &.card-body {
-      padding: .5rem;
-    }
-    .text-dark{
-      font-size: 1em;
-      color:#888888;
-    }
-    p{
-      &.text-parr{
-        font-size: .7em;
-        }
-      }
-    }
-
-    .tipo-letra{
-      font-family: 'Anton', sans-serif;
-      font-weight: bold;
-      font-size: 20px;
-      a{
-        color: #000;
-        font-weight: normal;
-        font-size: 25px;
-        }
-      a:hover{
-        text-decoration: none;
-        }
-      }
-#blog{
-
-  .maximo-tamano{
+  .maximo-tamano {
     width: 100%;
     height: 100%;
     margin: 0;
-    }
-  .estilo-link-titulo{
-      a{
+  }
+  .estilo-link-titulo {
+    a {
       color: #5d5d5d;
-      }
-    }
-
-
-  .imagen-principal{
-    margin-bottom: 10px;
-  }
-}
-#noticias{
-  .maximo-tamano{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    }
-  .estilo-link-titulo{
-    a{
-    color: #5d5d5d;
     }
   }
-
-
 }
+
 #header{
-    .links-redes{
-      font-size: 30px;
-      color:#000;
-    }
-    a:hover{
-      color: @rojoRockNside;
-      cursor: pointer;
-      -webkit-transition: color .5s ease-out;
-    }
+  .links-redes {
+    font-size: 30px;
+    color: #000;
   }
-#carouselExampleIndicators{
-  .fondo-largo{
+  a:hover {
+    color: @rojoRockNside;
+    cursor: pointer;
+    -webkit-transition: color .5s ease-out;
+  }
+.navbar-toggler{
+  color:#fff;
+  border-color:#fff;
+  }
+.nav-link{
+  color:#fff;
+  }
+}
+
+#section-header-icons-social{
+   display:block;
+   margin-bottom:10px;
+   background-color:@rojoRockNside;
+   a{
+    color:#fff;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+   }
+}
+#carouselExampleIndicators {
+  .fondo-largo {
     background-color: #00000085;
-    a{
+    a {
       color: #fff;
       font-size: 20px;
-    }
+      }
   }
-
   .carousel-indicators .active {
     background-color: @rojoRockNside;
-    }
-  .carousel-item{
+  }
+  .carousel-item {
     height: 500px;
-    @media(max-width: 767px){
-    height: 230px;
+    @media(max-width:767px) {
+      height: 230px;
     }
   }
-  .title-slider{
+  .title-slider {
     text-align: center;
     position: relative;
     bottom: 250px;
     background: #00000099;
-    a{
-      color: #fff;
-    }
-    @media(max-width: 767px){
-      bottom: 100px;
-    }
-  }
-}
-
-#contenido-post{
-
-
-  .videos-youtube{
-    iframe{
-      max-width: 300px;
-    max-height: 250px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    }
-  }
-
-  .titulo-principal{
-    @media(max-width: 767px){
-      font-size: 1.5em;
-    }
-  }
-  .card-body{
-    padding: 10px;
-  }
-  .bordes-estilos-youtube-videos{
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .estilo-youtube-videos{
-    height: 150px;
-    display: block;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  .imagesa {
-    width: 100%;
-    height: 100%;
-    max-width: 200px;
-    max-height: 200px;
-    @media(max-width: 767px){
-      max-width: 300px;
-      max-height: 300px;
-    }
-    @media(max-width: 991px){
-      max-width: 300px;
-      max-height: 300px;
-    }
-  }
-
-  .overlays {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 39px;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 200px;
-    max-height: 200px;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #ba0000b0;
-    @media(max-width: 767px){
-        left: 35px;
-        max-width: 300px;
-        max-height: 300px;
-    }
-    @media(max-width: 991px){
-      left: 15px;
-      max-width: 143px;
-      max-height: 300px;
-    }
-  }
-
-  .containers:hover .overlays {
-    opacity: 1;
-  }
-
-  .texts {
-    color: white;
- font-size: 20px;
- position: absolute;
- top: 50%;
- left: 50%;
- -webkit-transform: translate(-50%, -50%);
- -ms-transform: translate(-50%, -50%);
- transform: translate(-50%, -50%);
- text-align: center;
-    a{
-      color: #fff;
-    }
-  }
-
-  .recipe-video-overlay{
-    background-image:url('https://rocknside.com/wp-content/uploads/2019/01/maxresdefault.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width:250px;
-    height:140px;
-    margin-top:10px;
-    margin-bottom: 10px;
-  }
-  .estilo-tags-single{
-    font-family: 'Anton', sans-serif;
-    border: 3px solid #010101;
-    padding: 3px 5px;
-    margin-left: 5px;
-    line-height: 2.5;
-    font-size: 16px;
-    color: #000000;
-    text-decoration: none;
-  }
-  .estilo-tags-single:hover{
-    background: @rojoRockNside;
-    -webkit-transition: background .5s ease-out;
-  }
-  .autor-nota{
-    font-size: .9em;
-    span{
-      color: @rojoRockNside;
-    }
-  }
-  .spotify-elemento{
-    width:247px;
-    height:350px;
-    @media(max-width: 767px){
-      width:250px;
-    }
-  }
-
-    .estilo-noticias{
-      height: 200px;
-      background-size: cover;
-      background-position: center center;
-      border-radius: 0px;
-      background-repeat: no-repeat;
-      a{
-        color: #000;
-      }
-    }
-  .tam-imag{
-    height: 100%;
-    max-height: 135px;
-    @media(max-width: 991px){
-      max-height: 100px;
-    }
-    @media(max-width: 667px){
-      max-height: 250px;
-    }
-  }
-  .container{
-    padding-bottom: 15px;
-  }
-  .embed-responsive {
-    @media (max-width: 767px){
-      margin-bottom: 10px;
-    }
-  }
-  .contenedor-texto{
-    padding: 10px 10px;
-    margin: 5px 5px;
-    font-size: 1.3em;
-    text-align: justify;
-    .links-contenido{
-        img{
-          display: block;
-          margin-right: auto;
-          margin-left: auto;
-        }
-      a{
-        color: @rojoRockNside;
-        font-weight: bold;
-      }
-    }
-  }
-  .noticias-letrero{
-    font-family: 'Anton', sans-serif;
-    color: @rojoRockNside;
-    padding: 7px 0px;
-    &.instagram{
-      margin-top: 5px;
-    }
-  }
-  .stilo-cuadro-noticias-extras{
-    height: 80px;
-    .estilo-imagenes-tamano{
-      width: 100%;
-      max-width: 50px;
-      height: 100%;
-      max-height: 50px;
-    }
-    a{
-      font-size: 12px;
-    }
-    p{
-    &.date-estilo{
-      font-size: 10px;
-      }
-    }
-  }
-}
-
-#contentNoticiasHome{
-  hr{
-    border: 2px @rojoRockNside solid;
-    }
-  .titulo-inicio{
-    h1{
-      color: #000;
-      font-size: 30px;
-      font-weight: 900;
-      text-transform: uppercase;
-    }
-  }
-  font-family: 'Montserrat', sans-serif;
-  .slider-youtube{
-    height: 510px;
-    background:#343a40;
-    @media(max-width: 767px){
-      height: 310px;
-    }
-  }
-  .maximo-tamano{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    }
-  .estilo-link-titulo{
-    a{
-    color: #5d5d5d;
-    }
-  }
-
-  .section-youtube{
-    border-top: 4px @rojoRockNside solid;
-    font-family: 'Montserrat', sans-serif;
-    h1{
-      text-align: center;
-      color: #fff;
-      @media(max-width: 767px){
-        font-size: 20px;
-      }
-    }
-  p{
-    font-weight: bold;
-    font-size: 25px;
-    background: #343a40;
-    color: #fff;
-    text-align: center;
-  }
-  .carouseles{
-    height: 420px;
-    touch-action: pan-y;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    @media(max-width: 767px){
-      height: 220px;
-      }
-    }
-  }
-}
-
-#footer{
-  .footer{
-    font-family: 'Montserrat', sans-serif;
-    background: #343a40;
-    color: @rojoRockNside;
-    a{
-      color: @rojoRockNside;
-    }
-    .container{
-      background: #343a40;
-    }
-  }
-  .margen-footer{
-    margin-top: 50px;
-    &.estilo-footer-derecho{
-      padding: 33px 0px;
-    }
-    &.estilo-footer-centro{
-      padding: 0px 0px;
-      a:hover{
+      a {
         color: #fff;
-        cursor: pointer;
-        -webkit-transition: color .5s ease-out;
       }
-    }
-    &.estilo-footer-izquierdo{
-      padding: 33px 0px;
-    }
+      @media(max-width:767px) {
+        bottom: 100px;
+      }
   }
-  .imagen-parallax{
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    z-index: 100;
+}
+    #contenido-post {
+      margin-top: 50px;
+        .videos-youtube {
+            iframe {
+                max-width: 300px;
+                max-height: 250px;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+        .titulo-principal {
+            @media(max-width:767px) {
+                font-size: 1.5em;
+            }
+        }
+        .bordes-estilos-youtube-videos {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .estilo-youtube-videos {
+            height: 150px;
+            display: block;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .imagesa {
+            width: 100%;
+            height: 100%;
+            max-width: 200px;
+            max-height: 200px;
+            @media(max-width:767px) {
+                max-width: 300px;
+                max-height: 300px;
+            }
+            @media(max-width:991px) {
+                max-width: 300px;
+                max-height: 300px;
+            }
+        }
+        .overlays {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 39px;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 200px;
+            max-height: 200px;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #ba0000b0;
+            @media(max-width:767px) {
+                left: 35px;
+                max-width: 300px;
+                max-height: 300px;
+            }
+            @media(max-width:991px) {
+                left: 15px;
+                max-width: 143px;
+                max-height: 300px;
+            }
+        }
+        .containers:hover .overlays {
+            opacity: 1;
+        }
+        .texts {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            text-align: center;
+            a {
+                color: #fff;
+            }
+        }
+        .recipe-video-overlay {
+            background-image: url('https://rocknside.com/wp-content/uploads/2019/01/maxresdefault.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 250px;
+            height: 140px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .estilo-tags-single {
+            border: 3px solid #010101;
+            padding: 3px 5px;
+            margin-left: 5px;
+            line-height: 2.5;
+            font-size: 16px;
+            color: #000000;
+            text-decoration: none;
+        }
+        .estilo-tags-single:hover {
+            background: @rojoRockNside;
+            -webkit-transition: background .5s ease-out;
+        }
+        .autor-nota {
+            font-size: .9em;
+            span {
+                color: @rojoRockNside;
+            }
+        }
+        .spotify-elemento {
+            width: 247px;
+            height: 350px;
+            @media(max-width:767px) {
+                width: 250px;
+            }
+        }
+        .estilo-noticias {
+            height: 200px;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 0px;
+            background-repeat: no-repeat;
+            a {
+                color: #000;
+            }
+        }
+        .tam-imag {
+            height: 100%;
+            max-height: 135px;
+            @media(max-width:991px) {
+                max-height: 100px;
+            }
+            @media(max-width:667px) {
+                max-height: 250px;
+            }
+        }
+        .container {
+            padding-bottom: 15px;
+        }
+        .embed-responsive {
+            @media (max-width:767px) {
+                margin-bottom: 10px;
+            }
+        }
+        .contenedor-texto {
+            padding: 10px 10px;
+            margin: 5px 5px;
+            font-size: 1.3em;
+            text-align: justify;
+            .links-contenido {
+                img {
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                a {
+                    color: @rojoRockNside;
+                    font-weight: bold;
+                }
+            }
+        }
+        .noticias-letrero {
+            font-family: 'Anton',sans-serif;
+            color: @rojoRockNside;
+            padding: 7px 0px;
+            &.instagram {
+                margin-top: 5px;
+            }
+        }
+        .stilo-cuadro-noticias-extras {
+            height: 80px;
+            .estilo-imagenes-tamano {
+                width: 100%;
+                max-width: 50px;
+                height: 100%;
+                max-height: 50px;
+            }
+            a {
+                font-size: 12px;
+            }
+            p {
+                &.date-estilo {
+                    font-size: 10px;
+                }
+            }
+        }
     }
-  }
+        hr {
+            border: 2px @rojoRockNside solid;
+        }
+        .titulo-inicio {
+            h1 {
+                color: #000;
+                font-size: 30px;
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+        }
+        .slider-youtube {
+            height: 510px;
+            background: #000;
+            @media(max-width:767px) {
+                height: 310px;
+            }
+        }
+        .maximo-tamano {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        .estilo-link-titulo {
+            a {
+                color: #5d5d5d;
+            }
+        }
+        .section-youtube {
+            border-top: 4px @rojoRockNside solid;
+            font-family: 'Montserrat',sans-serif;
+            h1 {
+                text-align: center;
+                color: #fff;
+                @media(max-width:767px) {
+                    font-size: 20px;
+                }
+            }
+            p {
+                font-weight: bold;
+                font-size: 25px;
+                background: #000;
+                color: #fff;
+                text-align: center;
+            }
+            .carouseles {
+                height: 420px;
+                touch-action: pan-y;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                @media(max-width:767px) {
+                    height: 220px;
+                }
+            }
+        }
+
+    #footer {
+        .footer {
+            font-family: 'Montserrat',sans-serif;
+            background: #000;
+            color: @rojoRockNside;
+            a {
+                color: @rojoRockNside;
+            }
+            .container {
+                background: #000;
+            }
+        }
+        .margen-footer {
+            margin-top: 50px;
+            &.estilo-footer-derecho {
+                padding: 33px 0px;
+            }
+            &.estilo-footer-centro {
+                padding: 0px 0px;
+                a:hover {
+                    color: #fff;
+                    cursor: pointer;
+                    -webkit-transition: color .5s ease-out;
+                }
+            }
+            &.estilo-footer-izquierdo {
+                padding: 33px 0px;
+            }
+        }
+        .imagen-parallax {
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            z-index: 100;
+        }
+    }
 }

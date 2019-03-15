@@ -1,37 +1,81 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
+<div class="container">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <?php $int = 1;
+      $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
+      $args = array(
+      'order'   => 'DESC',
+      'category_name' => 'noticias',
+      'paged' => $paged,
+      'posts_per_page' => 4
+      );
+        $noticiasNew = new WP_Query( $args );?>
+        <?php if( $noticiasNew->have_posts() ): ?>
+        <?php  while( $noticiasNew->have_posts() ) : $noticiasNew-> the_post(); ?>
+        <?php $author = get_the_author();
+        $imagen = get_the_post_thumbnail_url();
+        $cont = 1;?>
+        <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $cont; ?>"></li>
+      <?php
+      $cont++;
+      endwhile; ?>
+      <?php endif; ?>
+    </ol>
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <a target="_blank" href="https://youtu.be/Q4MjT_018j0"><img class="d-block w-100" src="<?php bloginfo('template_url');?>/images/slider/gfyoutube.png" alt="Nuevo video RockNside"></a>
-        <div class="carousel-caption d-none d-md-block fondo-largo">
-          <h5>Especial de Gran Funk Railroad</h5>
-          <p><a href="https://youtu.be/Q4MjT_018j0"> Ya puedes ver este especial y todos nuestros videos en nuestro canal</a></p>
-        </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="<?php bloginfo('template_url');?>/images/slider/audiencia.png" alt="">
-      <div class="carousel-caption d-none d-md-block fondo-largo">
-        <h5>Noticias</h5>
-        <p><a href="noticias"> Ve las últimas noticias en el mundo de la música</a></p>
-      </div>
-    </div>
-    <!-- <div class="carousel-item">
-      <img class="d-block w-100" src="<?php bloginfo('template_url');?>/images/slider/camara.jpg" alt="">
-      <div class="title-slider">
-        <h2><a href="#">Lee las últimas noticias en el mundo del la música</a></h2>
-      </div>
-    </div> -->
+      <?php $int = 1;
+        $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
+        $args = array(
+          'order'   => 'DESC',
+          'category_name' => 'slider',
+          'paged' => $paged,
+          'posts_per_page' => 1
+        );
+        $noticiasNew = new WP_Query( $args );?>
+        <?php if( $noticiasNew->have_posts() ): ?>
+        <?php  while( $noticiasNew->have_posts() ) : $noticiasNew-> the_post(); ?>
+          <?php $author = get_the_author();
+                $imagen = get_the_post_thumbnail_url();?>
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="<?php echo $imagen; ?>" alt="">
+            <div class="carousel-caption d-md-block fondo-largo letras-titulos">
+              <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
+            </div>
+          </div>
+        <?php
+        endwhile; ?>
+      <?php endif; ?>
+
+        <?php $int = 1;
+        $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
+        $args = array(
+          'order'   => 'DESC',
+          'category_name' => 'noticias',
+          'paged' => $paged,
+          'posts_per_page' => 4
+        );
+        $noticiasNew = new WP_Query( $args );?>
+        <?php if( $noticiasNew->have_posts() ): ?>
+        <?php  while( $noticiasNew->have_posts() ) : $noticiasNew-> the_post(); ?>
+          <?php $author = get_the_author();
+                $imagen = get_the_post_thumbnail_url();?>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="<?php echo $imagen; ?>" alt="">
+            <div class="carousel-caption d-md-block fondo-largo">
+              <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
+            </div>
+          </div>
+        <?php
+        endwhile; ?>
+      <?php endif; ?>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+    <span class="sr-only">Anterior</span>
   </a>
   <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+    <span class="sr-only">Siguiente</span>
   </a>
+</div>
 </div>
