@@ -1,11 +1,13 @@
 #RockNside {
-  .bg-white{
-    background-color: black !important;
-  }
+	
+#section-noticias{
+	text-align: center;
+	
+}
 
   .letras-header{
     text-transform: uppercase;
-    font-family: 'Rubik', sans-serif;
+		font-family: 'Roboto Condensed', sans-serif;
   }
   .letras-texto{
 
@@ -13,16 +15,47 @@
 
   .letras-titulos{
 
-  }
+	}
+	
+	.categoria-post-home{
+		font-family: 'Roboto Condensed', sans-serif;
+		position: absolute;
+		top:0;
+		right: 0;
+		background-color: #000000;
+		text-transform: uppercase;
+		padding: 3px 3px;
+		font-weight: bold;
+		a{
+		color:#fff;
+		}
+		a:hover{
+			color:#d15043;
+			text-decoration-color: yellow;
+		}
+	}
 
 
   #section-slide-inicio{
-      margin-top: 100px;
-
+		font-family: 'Roboto Condensed', sans-serif;
+		.owl-nav{
+			text-align: center;
+			font-size: 20px;
+		}
+		.titulos-banner{	
+		text-align: right;
+		background-color: #000000ba;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+		top: 25vh;
+		a{
+			font-weight: bold;
+			font-size: 50px;
+			color:#fff;
+		}
+		}
   }
-
-
-
   .estilo-menu-desplegable{
     text-align: center;
     font-size: 15px;
@@ -36,7 +69,7 @@
         margin-top: 70px;
     }
     .crop {
-        height: 160px;
+        height:  200px;
         overflow: hidden;
         background-size: cover;
         background-position: center center;
@@ -67,16 +100,23 @@
         color: #000000 !important;
     }
     .card-text {
-        font-size: 17px;
-        color: #888888;
-        &.card-body {
-            padding: .5rem;
-        }
-        p {
-            &.text-parr {
-                font-size: .7em;
-            }
-        }
+			font-family: 'Roboto Condensed', sans-serif;
+			position: absolute;
+			bottom: 0;
+			text-align: left;
+			color: #fff;
+			font-weight: bold;
+			font-size: 20px;
+			text-transform: uppercase;
+		a{
+			color: #fff;
+			text-decoration-color: yellow;
+		}
+		p{
+			font-size: 15px;
+		}
+  
+  
     }
 
     #blog {
@@ -112,35 +152,41 @@
 }
 
 #header{
-  .links-redes {
-    font-size: 30px;
-    color: #000;
-  }
-  a:hover {
-    color: @rojoRockNside;
-    cursor: pointer;
-    -webkit-transition: color .5s ease-out;
-  }
-.navbar-toggler{
-  color:#fff;
-  border-color:#fff;
-  }
-.nav-link{
-  color:#fff;
-  }
+	background-color: #fff;
+	a{
+		color: #000;
+	}
+	.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+	}
+	.navbar-toggler{
+		color: #000;
+		border:1px solid #000;
+	}
+	.nav-item:hover {
+		background-color:#000;
+		a{
+		color:#fff;
+
+		}
+	}
 }
 
 #section-header-icons-social{
-   display:block;
-   margin-bottom:10px;
-   background-color:@rojoRockNside;
+    height: 100px;
+    background-color: #ff008a;
+    content: '';
+		background-size: auto 100%;
+		.rocknsidebanner {
+    background-position: center center;
+		background-repeat: repeat-x;
+		background-size: cover;
+}
    a{
-    color:#fff;
-    font-size: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 2px;
-    margin-bottom: 5px;
+    color:#000;
    }
 }
 #carouselExampleIndicators {
