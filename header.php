@@ -22,7 +22,7 @@
   <!--meta name="robots" content="INDEX,FOLLOW" NO SEO/-->
   <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url');?>/css/bootstrap.min.css">
   <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url');?>/css/generals.css">
-  <link rel="icon" type="imagen.png" href="<?php bloginfo('template_url');?>/images/fav.png" sizes="64x64">
+  <link rel="icon" type="imagen.png" href="<?php bloginfo('template_url');?>/images/logos/favicon.png" sizes="64x64">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
