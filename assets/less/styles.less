@@ -13,7 +13,8 @@
         h1 {
           font-size: 50px;
         }
-      }
+			}
+
 
 	.titulos-index-section{
 		font-size:35px;
@@ -30,7 +31,8 @@
 		position: absolute;
 		top:0;
 		right: 0;
-		background-color: #000000;
+		background-color: @rojoRockNside ;
+		border: 1px solid #000;
 		text-transform: uppercase;
 		padding: 3px 3px;
 		font-weight: bold;
@@ -38,7 +40,7 @@
 		color:#fff;
 		}
 		a:hover{
-			color:#d15043;
+			color:#000;
 			text-decoration-color: yellow;
 		}
 	}
@@ -90,8 +92,11 @@
     }
     .text-titulo-notas {
         font-size: 1em;
-        color: #000000 !important;
-    }
+		}
+		.card{
+			border:0;
+    	border-radius: 0;
+		}
     .card-text {
 			font-family: 'Roboto Condensed', sans-serif;
 			position: absolute;
@@ -103,7 +108,7 @@
 			text-transform: uppercase;
 		a{
 			color: #fff;
-			text-decoration-color: yellow;
+			text-decoration-color:@rojoRockNside;
 		}
 		p{
 			font-size: 15px;

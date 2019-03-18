@@ -24,7 +24,7 @@ get_header();?>
       <?php if( $homeProductos->have_posts() ): ?>
       <?php  while( $homeProductos->have_posts() ) : $homeProductos-> the_post(); ?>
         <?php $author = get_the_author(); ?>
-        <div class="col-sm-6 col-md-6 col-lg-3">
+        <div class="col-sm-6 col-md-6 col-lg-4">
           <div class="card mb-4 mt-4 box-shadow">
             <a href="<?php the_permalink(); ?>">
               <div class="crop" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>')"></div>

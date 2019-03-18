@@ -21,7 +21,7 @@ $tagName = $tag->slug;
       $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
       $args = array(
         'order'   => 'DESC',
-        'tag' => $tagName,
+        'category_name' => $tagName,
         'paged' => $paged,
         'posts_per_page' => -1
       );
