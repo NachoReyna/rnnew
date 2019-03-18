@@ -7,13 +7,22 @@
   <?php
     if ( have_posts() ) {
     	while ( have_posts() ) {
-    	the_post(); ?>
+      the_post(); ?>
+  <!-- Facebook Social Ophen Grapht -->
   <meta property="fb:app_id" content="283842588832759" />
   <meta property="og:url" content="<?php echo the_permalink(); ?>" />
-  <meta property="og:type" content="article" />
+  <meta property="og:type" content="website" />
   <meta property="og:title" content="<?php echo the_title(); ?>" />
   <meta property="og:description" content="<?php the_excerpt(); ?>" />
   <meta property="og:image" content="<?php the_post_thumbnail_url(); ?> " />
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@rocknside">
+  <meta name="twitter:creator" content="@rocknside">
+  <meta name="twitter:title" content="<?php echo the_title(); ?>">
+  <meta name="twitter:description" content="<?php the_excerpt(); ?>">
+  <!-- Las imágenes de sumario de Twitter deben ser de al menos 200x200px -->
+  <meta name="twitter:image" content="<?php the_post_thumbnail_url(); ?>">
   <?php } // end while
     } // end if ?>
   <!-- End of facebook tagging -->

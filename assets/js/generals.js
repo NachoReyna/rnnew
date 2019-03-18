@@ -1,9 +1,13 @@
 $(document).ready(function () {
 	$('.owl-carousel').owlCarousel({
-		loop: false,
+		loop: true,
 		margin: 10,
 		dotsClass: 'owl-dots',
 		nav: true,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
+		autoHeight: true,
 		responsive: {
 			0: {
 				items: 1

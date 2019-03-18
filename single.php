@@ -49,7 +49,7 @@
         </div>
         <div class="estilo-comparte">
             <h4>COMPARTE:</h4>
-          <?php echo do_shortcode( '[social_warfare]' ); ?>
+        <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
         </div>        
       </div>
       <!-- -->
@@ -147,12 +147,12 @@ if ( ! empty( $categories ) ) {?>
     }
       endwhile; ?>
     <?php endif; ?>
-        <div class="estilo-titulos-single">
+        <!--div class="estilo-titulos-single">
           <div class="col-md-12 col-sm-12 col-lg-12">
             <h4 class="noticias-letrero">INSTAGRAM</h4>
           </div>
           <?php echo do_shortcode( '[insta-gallery id="1"]' ); ?>
-        </div>
+        </div-->
       </div>
     </div>
   </div>

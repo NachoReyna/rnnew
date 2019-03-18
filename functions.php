@@ -12,8 +12,14 @@ function codex_custom_init() {
 			'taxonomies'  => array( 'category', 'post_tag')
     );
     register_post_type( 'video', $argsVideos );
+      $argsBanners = array(
+      'public' => true,
+      'label'  => 'Banners',
+			'has_archive' => true,
+			'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields'),
+			'taxonomies'  => array( 'category', 'post_tag')
+    );
+    register_post_type( 'banners', $argsBanners );
 }
-
 add_action( 'init', 'codex_custom_init' );
-
 ?>
