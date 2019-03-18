@@ -1,37 +1,42 @@
 <?php
-	/* Template Name:  */
+/*
+Template Name: Tag Page
+*/
 get_header();
+$tag = get_queried_object();
+$tagName = $tag->slug;
 ?>
-<div id="noticias">
-  <div class="container album py-4" align="center">
-    <div class="imagen-principal">
-      <img src="<?php bloginfo('template_url');?>/images/section/noticias.jpg" class="img-fluid" alt="Responsive image">
+<section id="noticias">
+  <div class="container mt-3">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <div class="col-sm-12 col-md-12 col-lg-12 titulos-secciones">
+        <h1 class="tipo-letra"><?php echo $tagName; ?></h1>
+      </div>
+          <div class="imagen-principal" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');"></div>
     </div>
+  </div>
+  <div class="container">
     <div class="row">
       <?php
-      $nombreTag = get_tag_link();
-      $int = 1;
       $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
       $args = array(
         'order'   => 'DESC',
-        'tag' => $nombreTag,
+        'tag' => $tagName,
         'paged' => $paged,
-        'posts_per_page' => 11
+        'posts_per_page' => -1
       );
       $homeProductos = new WP_Query( $args );?>
       <?php if( $homeProductos->have_posts() ): ?>
       <?php  while( $homeProductos->have_posts() ) : $homeProductos-> the_post(); ?>
         <?php $author = get_the_author(); ?>
-        <div class="col-md-6 col-sm-6 col-lg-3">
-          <div class="card mb-4 box-shadow sin-boders">
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <div class="card mb-4 mt-4 box-shadow">
             <a href="<?php the_permalink(); ?>">
               <div class="crop" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>')"></div>
             </a>
-            <div class="card-body">
-              <h4 class="mb-0 estilo-link-titulo">
-                <a class="text-blanco" href=" <?php the_permalink(); ?>"><?php the_title();?></a>
-              </h4>
-              <p><?php echo $author;?> <br> <?php echo the_date(); ?>  </p>
+            <div class="card-body card-text estilos-texto letras-titulos">
+              <a class="text-titulo-notas" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
+              <p class="text-parr"> <?php echo the_date(); ?>  </p>
             </div>
           </div>
         </div>
@@ -40,5 +45,5 @@ get_header();
     <?php endif; ?>
     </div>
   </div>
-</div>
+</section>
 <?php get_footer();?>

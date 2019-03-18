@@ -1,10 +1,25 @@
 #RockNside {
-	
-#section-noticias{
-	text-align: center;
-	
-}
+	#section-noticias{
+		text-align: center;
+		
+	}
+	 .titulos-secciones {
+		 	font-family: 'Roboto Condensed', sans-serif;
+		  position: absolute;
+			text-align: center;
+    	color: #fff;
+			z-index: 100;
+			top:50px;
+        h1 {
+          font-size: 50px;
+        }
+      }
 
+	.titulos-index-section{
+		font-size:35px;
+		text-transform: uppercase;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
   .letras-header{
     text-transform: uppercase;
 		font-family: 'Roboto Condensed', sans-serif;
@@ -67,26 +82,11 @@
         background-size: cover;
         background-position: center center;
     }
-    .sin-boders {
-        border: 0px;
-    }
+
     .imagen-principal {
-        height: 200px;
-        overflow: hidden;
-        margin-bottom: 10px;
+        height: 150px;
         background-size: cover;
         background-position: center center;
-        position: relative;
-        .titulos-secciones {
-            color: #fff;
-            position: absolute;
-            left: 2px;
-            right: 0;
-            bottom: 0;
-            h1 {
-                font-size: 50px;
-            }
-        }
     }
     .text-titulo-notas {
         font-size: 1em;
@@ -108,42 +108,8 @@
 		p{
 			font-size: 15px;
 		}
-  
-  
-    }
-
-    #blog {
-        .maximo-tamano {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-        }
-        .estilo-link-titulo {
-            a {
-                color: #5d5d5d;
-            }
-        }
-        .imagen-principal {
-            margin-bottom: 10px;
-        }
-    }
-#noticias {
-  margin-top: 100px;
-  .estilos-texto {
-    text-align: center;
-  }
-  .maximo-tamano {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  }
-  .estilo-link-titulo {
-    a {
-      color: #5d5d5d;
-    }
-  }
-}
-
+	}
+		
 #header{
 	background-color: #fff;
 	a{
@@ -168,9 +134,9 @@
 	}
 }
 
-#section-header-icons-social{
+#section-header-banner{
     height: 100px;
-    background-color: #ff008a;
+    background-color: #fff;
     content: '';
 		background-size: auto 100%;
 		.rocknsidebanner {
@@ -215,15 +181,22 @@
 
 	.imagen-estilo-singles{
 				width: 100%;
-				
 			}
+
     #contenido-post {
-			font-family: 'Open Sans', sans-serif;
+			.estilo-titulo-principal{
+				margin-top:20px;
+				font-weight: bold;
+				text-align: center;
+				font-family: 'Roboto Condensed', sans-serif;
+			}
 			.estilo-titulos-single{
 				text-align: center;
 				font-weight: bold;
+        font-size: 10px;
 			}
 			.noticias-letrero{
+				font-family: 'Roboto Condensed', sans-serif;
 				text-transform: uppercase;
 				background: black;
 				padding: 5px;
@@ -231,45 +204,15 @@
 			}
       .videos-youtube {
         iframe {
-          max-width: 300px;
-          max-height: 250px;
-          display: block;
-          margin-right: auto;
-          margin-left: auto;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					border: 0;
         }
-      }
-      .estilo-titulos-single {
-					text-align: center;
-          font-size: 10px;
-      }
-        .bordes-estilos-youtube-videos {
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .estilo-youtube-videos {
-            height: 150px;
-            display: block;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-        .imagesa {
-            width: 100%;
-            height: 100%;
-            max-width: 200px;
-            max-height: 200px;
-            @media(max-width:767px) {
-                max-width: 300px;
-                max-height: 300px;
-            }
-            @media(max-width:991px) {
-                max-width: 300px;
-                max-height: 300px;
-            }
-				}
-
+			}
 				.estilo-comparte{
-					font-family: 'Roboto Condensed', sans-serif !important;
+					font-family: 'Roboto Condensed', sans-serif;
 					text-align: left;
 				}
 				.tags-estilos{
@@ -295,77 +238,39 @@
         .autor-nota {
           font-size: .7em;
         span {
-            color: @rojoRockNside;
+          color: @rojoRockNside;
           }
         }
         .spotify-elemento {
-    				width: 320px;
-            height: 350px;
-            @media(max-width:767px) {
-                width: 250px;
-            }
-        }
-        
-        .tam-imag {
-            height: 100%;
-            max-height: 135px;
-            @media(max-width:991px) {
-                max-height: 100px;
-            }
-            @media(max-width:667px) {
-                max-height: 250px;
-            }
+    			max-width: 100%;
+        	height: 350px;
         }
 
-        .embed-responsive {
-            @media (max-width:767px) {
-                margin-bottom: 10px;
-            }
-        }
         .contenedor-texto {
-          font-size: 1em;
+          font-size: 1.1em;
           text-align: justify;
         .links-contenido {
           img {
-            display: block;
+   				 	height: auto;
+						display: block;
+						max-width: 100%;
+						margin-left: auto;
             margin-right: auto;
-            margin-left: auto;
           }
           	a {
               color: @rojoRockNside;
-              font-weight: bold;
             }
           }
         }
 			}
-	
-
       hr {
         border: 2px @rojoRockNside solid;
       }
-        .titulo-inicio {
-            h1 {
-                color: #000;
-                font-size: 30px;
-                font-weight: 900;
-                text-transform: uppercase;
-            }
-        }
         .slider-youtube {
             height: 510px;
             background: #000;
             @media(max-width:767px) {
                 height: 310px;
-            }
-        }
-        .maximo-tamano {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-        }
-        .estilo-link-titulo {
-            a {
-                color: #5d5d5d;
             }
         }
         .section-youtube {
@@ -397,32 +302,19 @@
         }
 
     #footer {
-        .footer {
-            font-family: 'Montserrat',sans-serif;
-            background: #000;
-            color: @rojoRockNside;
+			text-align: center;
+        	.footer {
+						color: #000;
+						font-size:20px;
+						padding-top: 20px;
+						padding-bottom: 20px;
+						background: #ed1d24;
+						font-family: 'Roboto Condensed', sans-serif;
             a {
-                color: @rojoRockNside;
+                color: #000;
             }
             .container {
-                background: #000;
-            }
-        }
-        .margen-footer {
-            margin-top: 50px;
-            &.estilo-footer-derecho {
-                padding: 33px 0px;
-            }
-            &.estilo-footer-centro {
-                padding: 0px 0px;
-                a:hover {
-                    color: #fff;
-                    cursor: pointer;
-                    -webkit-transition: color .5s ease-out;
-                }
-            }
-            &.estilo-footer-izquierdo {
-                padding: 33px 0px;
+                background: #ed1d24;
             }
         }
         .imagen-parallax {

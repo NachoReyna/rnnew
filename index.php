@@ -2,9 +2,14 @@
 <section id="section-slide-inicio">
   <?php include('include/page-slide.php'); ?>
 </section>
+<section id="section-noticias">
+    <?php include('include/page-post-all.php'); ?>
+</section>
 <section>
   <div class="container">
-    <hr>
+    <div class="titulos-index-section">
+      Noticias<hr>
+    </div>  
   </div>
 </section>
 <section id="section-noticias">
@@ -12,7 +17,9 @@
 </section>
 <section>
   <div class="container">
-    <hr>
+    <div class="titulos-index-section">
+      Música<hr>
+    </div>
   </div>
 </section>
 <section id="section-musica">

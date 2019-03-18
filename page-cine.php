@@ -2,11 +2,12 @@
 /* Template Name: Cine */
 get_header();?>
 <section id="noticias">
-  <div class="container">
-    <div class="imagen-principal" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');">
-      <div class="titulos-secciones letras-titulos">
-        <h1 class="tipo-letra"><?php the_title(); ?></h1>
+  <div class="container mt-3">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <div class="col-sm-12 col-md-12 col-lg-12 titulos-secciones">
+        <h1 class="tipo-letra"><?php the_title();?></h1>
       </div>
+          <div class="imagen-principal" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');"></div>
     </div>
   </div>
   <div class="container">
@@ -23,8 +24,8 @@ get_header();?>
       <?php if( $homeProductos->have_posts() ): ?>
       <?php  while( $homeProductos->have_posts() ) : $homeProductos-> the_post(); ?>
         <?php $author = get_the_author(); ?>
-        <div class="col-sm-6 col-md-6 col-lg-3">
-          <div class="card mb-4 mt-4 box-shadow sin-boders">
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card mb-4 mt-4 box-shadow">
             <a href="<?php the_permalink(); ?>">
               <div class="crop" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>')"></div>
             </a>

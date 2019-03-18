@@ -4,9 +4,10 @@
       $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
       $args = array(
         'order'   => 'DESC',
-        'category_name' => 'musica',
+        'post_type' => 'post',
+        'post_status'=>'publish',
         'paged' => $paged,
-        'posts_per_page' => 3
+        'posts_per_page' => 9
       );
       $homeProductos = new WP_Query( $args );?>
     <?php if( $homeProductos->have_posts() ): ?>

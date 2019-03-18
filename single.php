@@ -20,7 +20,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-12 col-md-8">
-        <div class="estilo-titulos-single">
+        <div class="estilo-titulo-principal">
         <h1><?php echo $titulo;?></h1>
         </div>
         <div class="contenedor-texto">
@@ -69,7 +69,7 @@
       <?php $author = get_the_author();
       $link_video_youtube = get_field('link_video_youtube');?>
       <div class="col-12">
-        <div class="card mb-4 box-shadow sin-boders">
+        <div class="card mb-4 box-shadow">
           <a href="<?php echo $link_video_youtube; ?>" data-lity>
             <div class="crop" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>')"></div>
           </a>
@@ -130,7 +130,7 @@
           $categories = get_the_category();
 if ( ! empty( $categories ) ) {?>
     <div class="col-md-12 col-sm-12 col-lg-12">
-      <div class="card mb-4 box-shadow sin-boders">
+      <div class="card mb-4 box-shadow ">
         <a href="<?php the_permalink(); ?>">
           <div class="crop" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>')"></div>
         </a>

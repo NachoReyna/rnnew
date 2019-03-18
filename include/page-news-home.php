@@ -15,7 +15,7 @@
           $categories = get_the_category();
 if ( ! empty( $categories ) ) {?>
     <div class="col-md-6 col-sm-6 col-lg-4">
-      <div class="card mb-4 box-shadow sin-boders">
+      <div class="card mb-4 box-shadow">
         <a href="<?php the_permalink(); ?>">
           <div class="crop" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>')"></div>
         </a>
