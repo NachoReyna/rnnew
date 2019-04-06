@@ -5,26 +5,44 @@
   <!-- Facebook tagging -->
   <meta property="fb:pages" content="302990876817991" />
   <?php
-    if ( have_posts() ) {
-    	while ( have_posts() ) {
-      the_post(); ?>
+  	if( is_home() ){
+          $resulttitle = get_bloginfo('name');
+          $resultdescription = get_bloginfo('description');
+          $resultkeywords = '';
+          $resultlang = get_bloginfo('url');
+          $image = 'https://rocknside.com/wp-content/themes/rnnew/images/logos/logoRockNsideSombra.png';
+		}else{
+			if( have_posts() ) :
+				while( have_posts() ) :
+					the_post();
+					$resulttitle = get_the_title();
+					$resultdescription = get_the_excerpt();
+					$resultkeywords = get_field('keywords');
+					$resultlang = get_permalink();
+					$image = get_the_post_thumbnail_url();
+				endwhile;
+			endif;
+		}
+		$metatitle = $resulttitle;
+		$metadescription = $resultdescription;
+		$metakeywords = $resultkeywords;
+    $metalang = $resultlang;
+?>
   <!-- Facebook Social Ophen Grapht -->
   <meta property="fb:app_id" content="283842588832759" />
-  <meta property="og:url" content="<?php echo the_permalink(); ?>" />
+  <meta property="og:url" content="<?php echo $metalang; ?>" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="<?php echo the_title(); ?>" />
-  <meta property="og:description" content="<?php the_excerpt(); ?>" />
-  <meta property="og:image" content="<?php the_post_thumbnail_url(); ?> " />
+  <meta property="og:title" content="<?php echo $metatitle; ?>" />
+  <meta property="og:description" content="<?php echo $metadescription; ?>" />
+  <meta property="og:image" content="<?php echo $image; ?> " />
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@rocknside">
   <meta name="twitter:creator" content="@rocknside">
-  <meta name="twitter:title" content="<?php echo the_title(); ?>">
-  <meta name="twitter:description" content="<?php the_excerpt(); ?>">
+  <meta name="twitter:title" content="<?php echo $metatitle; ?>">
+  <meta name="twitter:description" content="<?php echo $metadescription; ?>">
   <!-- Las imágenes de sumario de Twitter deben ser de al menos 200x200px -->
-  <meta name="twitter:image" content="<?php the_post_thumbnail_url(); ?>">
-  <?php } // end while
-    } // end if ?>
+  <meta name="twitter:image" content="<?php echo $image; ?>">
   <!-- End of facebook tagging -->
   <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
   <meta name="keywords" content="">
