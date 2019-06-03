@@ -8,15 +8,25 @@
   	if( is_home() ){
           $resulttitle = get_bloginfo('name');
           $resultdescription = get_bloginfo('description');
+           ?>  
+          <title><?php echo $resulttitle; ?></title>
+          <meta name="description"
+            content="<?php echo $resultdescription; ?>" />
+          <?php
           $resultkeywords = '';
           $resultlang = get_bloginfo('url');
           $image = 'https://rocknside.com/wp-content/themes/rnnew/images/logos/logoRockNsideSombra.png';
 		}else{
 			if( have_posts() ) :
 				while( have_posts() ) :
-					the_post();
-					$resulttitle = get_the_title();
-					$resultdescription = get_the_excerpt();
+          the_post();
+          $resulttitle = get_the_title();
+          $resultdescription = get_the_excerpt();
+          ?>  
+          <title><?php echo $resulttitle; ?></title>
+          <meta name="description"
+            content="<?php echo $resultdescription; ?>" />
+          <?php
 					$resultkeywords = get_field('keywords');
 					$resultlang = get_permalink();
 					$image = get_the_post_thumbnail_url();
@@ -50,9 +60,19 @@
   <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url');?>/css/bootstrap.min.css">
   <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url');?>/css/generals.css">
   <link rel="icon" type="imagen.png" href="<?php bloginfo('template_url');?>/images/logos/favicon.png" sizes="64x64">
+
+
+  <!-- Fuentes -->
+<link href="https://fonts.googleapis.com/css?family=Fenix&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
+
+
+
+
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <title><?php bloginfo('name')?></title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122847204-1"></script>

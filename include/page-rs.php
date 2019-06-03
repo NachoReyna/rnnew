@@ -1,7 +1,8 @@
    <?php $the_query = new WP_Query(
       array( 'post_type' => 'banners',
-      'posts_per_page' => 2,
+      'posts_per_page' => 1,
       'orderby' => 'rand'
+
       ));?>
       <?php if ( $the_query->have_posts() ) : ?>
       <?php while ( $the_query->have_posts() ) : $the_query->the_post();?>

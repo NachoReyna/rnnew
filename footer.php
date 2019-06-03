@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-lg-4">
-          <a href="#"><img src="<?php bloginfo('template_url');?>/images/logos/logoRockNsideSombra.png" title="El rock como nunca lo percibiste" alt="Logo Footer RockNside" class="tamano-logo"></a>
+          <a href="#"><img src="<?php bloginfo('template_url');?>/images/logos/rocknside_01_blanco.png" title="El rock como nunca lo percibiste" alt="Logo Footer RockNside" class="tamano-logo"></a>
         </div>
         <div class="col-md-12 col-sm-12 col-lg-4">
           <a href="https://www.facebook.com/RockNside/"><i class="fab fa-facebook-square fa-2x"></i></a>
