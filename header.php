@@ -94,7 +94,7 @@
               </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-caret-down"></i>
+          <i class="fas fa-bars"></i>          
           </button>
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav ml-auto tipo-letra estilo-menu-desplegable">
