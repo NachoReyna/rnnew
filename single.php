@@ -49,16 +49,10 @@
         <?php }//endwhile
         }//endif ?>
         </div>
-        <div class="estilo-comparte">
-            <p>COMPARTE:</p>
-        <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
-        </div>
           <?php include('include/page-publicidad.php'); ?>
-
       </div>
       <!-- -->
       <div class="col-12 col-sm-12 col-md-4 mt-3">
-
         <div class="estilo-titulos-single">
           <div class="col-md-12 col-sm-12 col-lg-12">
             <h4 class="noticias-letrero"><i class="far fa-newspaper"></i> Más Noticias</h4>
