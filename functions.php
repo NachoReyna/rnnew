@@ -12,14 +12,24 @@ function codex_custom_init() {
 			'taxonomies'  => array( 'category', 'post_tag')
     );
     register_post_type( 'video', $argsVideos );
-      $argsBanners = array(
+
+      $argsBanner = array(
       'public' => true,
-      'label'  => 'Banners',
+      'label'  => 'Banner',
 			'has_archive' => true,
 			'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields'),
 			'taxonomies'  => array( 'category', 'post_tag')
     );
-    register_post_type( 'banners', $argsBanners );
+    register_post_type( 'banner', $argsBanner );
+
+     $argsPublicidad = array(
+      'public' => true,
+      'label'  => 'Publicidad',
+			'has_archive' => true,
+			'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields'),
+			'taxonomies'  => array( 'category', 'post_tag')
+    );
+    register_post_type( 'publicidad', $argsPublicidad );
 }
 add_action( 'init', 'codex_custom_init' );
 ?>

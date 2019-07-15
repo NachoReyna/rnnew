@@ -1,4 +1,10 @@
 #RockNside {
+  .imagen-publicidad{
+    img{
+      width: 100%;
+      max-width: 500px;
+    }
+  }
   .item{
     height:500px;
   }
@@ -17,59 +23,31 @@
         }
 			}
 
-
-	.titulos-index-section{
-    h1 {
-    font-size:18px;
-    color:#fff;
-    font-family: 'Fenix', serif;
-    text-transform: uppercase;
-    font-weight: bold;
-      &.negro{
-        border-bottom: 3px solid #020101;
-        }
-      &.rojo{
-        border-bottom: 3px solid #E73C33;
-      }
-      &.verde{
-        border-bottom: 3px solid #25A856;
-      }
-      span{
-        padding: 5px 10px 3px 10px;  
-        &.negro{
-        background: #020101;
-        }
-        &.rojo{
-        background: #E73C33;
-        }
-        &.verde{
-        background: #25A856;
-        }
-      }
-    }
-	}
-  .letras-header{
-    text-transform: uppercase;
-		font-family: 'Roboto Condensed', sans-serif;
-  }
-
-	.categoria-post-home{
-		font-family: 'Roboto Condensed', sans-serif;
-		position: absolute;
+  .categoria-post-home{
 		top:0;
-		right: 0;
-		border: 1px solid #000;
-		text-transform: uppercase;
+    right: 0;
 		padding: 3px 3px;
     font-weight: bold;
+    position: absolute;
+		border: 1px solid #000;
+    text-transform: uppercase;
       &.verde{
         background-color:  #25A856;
       }
       &.rojo{
-        background-color: #E73C33;
+        background-color: #d1394c;
       }
       &.negro{
         background-color: #020101;
+      }
+      &.rosado{
+        background-color: #ec407a;
+      }
+      &.morado{
+        background-color: #af39c7;
+      }
+      &.azulado{
+        background-color: #0e7791;
       }
       a{
       color:#fff;
@@ -80,48 +58,101 @@
       }
 	}
 
-  #section-slide-inicio{
-		font-family: 'Roboto Condensed', sans-serif;
-		.owl-nav{
-			text-align: center;
-			font-size: 20px;
-		}
-		.titulos-banner{	
-      text-align: center;
-      background-color: #0000008a;
-      background: rgba(0,0,0,0);
-      background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.79) 79%, rgba(0,0,0,1) 100%);
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(79%, rgba(0,0,0,0.79)), color-stop(100%, rgba(0,0,0,1)));
-      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.79) 79%, rgba(0,0,0,1) 100%);
-      background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.79) 79%, rgba(0,0,0,1) 100%);
-      background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.79) 79%, rgba(0,0,0,1) 100%);
-      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.79) 79%, rgba(0,0,0,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
-      padding: 20px;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: 120px;
-      width: 100%;
-      a{
-        font-weight: bold;
-        font-size: 50px;
-        color:#fff;
+	.titulos-index-section{
+    h1 {
+    color:#fff;
+    font-size:18px;
+    font-weight: bold;
+    text-transform: uppercase;
+      &.negro{
+        border-bottom: 3px solid #020101;
+        }
+      &.rojo{
+        border-bottom: 3px solid #d1394c;
       }
-		}
+      &.verde{
+        border-bottom: 3px solid #25A856;
+      }
+      &.morado{
+        border-bottom: 3px solid #af39c7;
+      }
+      &.rosado{
+        border-bottom: 3px solid #ec407a;
+      }
+      &.azulado{
+        border-bottom: 3px solid #0e7791;
+      }
+      span{
+        padding: 5px 10px 3px 10px;  
+        &.negro{
+        background: #020101;
+        }
+        &.rojo{
+        background: #d1394c;
+        }
+        &.verde{
+        background: #25A856;
+        }
+        &.morado{
+        background: #af39c7;
+        }
+        &.rosado{
+        background:  #ec407a;
+        }
+        &.azulado{
+        background:  #0e7791;
+        }
+      }
+    }
   }
-  .estilo-menu-desplegable{
-    text-align: center;
-    font-size: 15px;
+  
+  .letras-header{
+    text-transform: uppercase;
+		font-family: 'Roboto Condensed', sans-serif;
   }
+
+
+    #section-slide-inicio{
+      .owl-nav{
+        display: none;
+        text-align: center;
+        font-size: 20px;
+      }
+      .owl-dots{
+        display: none;
+      }
+      .titulos-banner{	
+        .degradado-banner;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        height: 120px;
+        line-height: 30px;
+        text-align: center;
+        position: absolute;
+        a{
+          color:#fff;
+          font-size: 40px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .estilo-menu-desplegable{
+      text-align: center;
+      font-size: 15px;
+    }
 
     .tamano-logo {
         width: 100%;
         max-width: 130px;
     }
+
     .margen-secciones-interiores {
         margin-top: 70px;
     }
+
     .crop {
         height:  200px;
         overflow: hidden;
@@ -386,10 +417,12 @@
             }
         }
         .imagen-parallax {
+            height: 300px;
+            z-index: 100;
+            background-attachment: fixed;
+            background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 200px;
-            z-index: 100;
         }
     }
 }

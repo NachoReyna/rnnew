@@ -1,4 +1,6 @@
 $(document).ready(function () {
+	lazyload();
+
 	$('.owl-carousel').owlCarousel({
 		loop: true,
 		margin: 0,

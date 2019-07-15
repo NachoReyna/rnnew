@@ -1,5 +1,5 @@
 <div id="footer">
-  <div class="imagen-parallax" style="background-image: url(' <?php bloginfo('template_url');?>/images/footer/guitarr_play.jpg');"></div>
+  <div class="imagen-parallax" style="background-image: url(' <?php bloginfo('template_url');?>/images/youtube/ampli.jpg');"></div>
   <footer class="footer estilo-footer">
     <div class="container">
       <div class="row">
@@ -26,6 +26,7 @@
   </footer>
 </div>
 <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/lib/framework.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/lazyload.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/generals.min.js"></script>
 <?php wp_footer(); ?>
 </body>
