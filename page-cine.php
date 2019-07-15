@@ -9,6 +9,7 @@ get_header();?>
       </div>
           <div class="imagen-principal" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');"></div>
     </div>
+    <?php include('include/page-publicidad.php'); ?>
   </div>
   <div class="container">
     <div class="row">
@@ -40,5 +41,6 @@ get_header();?>
     <?php endif; ?>
     </div>
   </div>
+  <?php include('include/page-publicidad.php'); ?>
 </section>
 <?php get_footer();?>

@@ -24,6 +24,7 @@
         <div class="estilo-titulo-principal">
         <h1><?php echo $titulo;?></h1>
         </div>
+          <?php include('include/page-publicidad.php'); ?>
         <div class="contenedor-texto">
           <div class="autor-nota">
             <p>Por <?php echo $author; ?><span> | </span><?php echo the_date();?></p>
@@ -51,14 +52,16 @@
         <div class="estilo-comparte">
             <p>COMPARTE:</p>
         <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
-        </div>        
+        </div>
+          <?php include('include/page-publicidad.php'); ?>
+
       </div>
       <!-- -->
       <div class="col-12 col-sm-12 col-md-4 mt-3">
 
         <div class="estilo-titulos-single">
-          <div class="col-md-12 col-sm-12 col-lg-12 letras-titulos">
-            <h4 class="noticias-letrero">Más Noticias</h4>
+          <div class="col-md-12 col-sm-12 col-lg-12">
+            <h4 class="noticias-letrero"><i class="far fa-newspaper"></i> Más Noticias</h4>
           </div>
         </div>
       <?php $int = 1;
@@ -80,7 +83,7 @@ if ( ! empty( $categories ) ) {?>
         <a href="<?php the_permalink(); ?>">
           <div class="crop" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>')"></div>
         </a>
-        <div class="categoria-post-home negro">
+        <div class="categoria-post-home azulado">
           <?php  echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';?>
         </div>
         <div class="card-body card-text">
@@ -95,7 +98,7 @@ if ( ! empty( $categories ) ) {?>
     <?php endif; ?>
         <div class="estilo-titulos-single mt-2">
           <div class="col-12 col-sm-12 col-md-12">
-            <h4 class="noticias-letrero">Escucha RockNside en Spotify</h4>
+            <h4 class="noticias-letrero"><i class="fas fa-headphones-alt"></i> Escucha RockNside en Spotify</h4>
           </div>
         </div>
 
@@ -104,8 +107,8 @@ if ( ! empty( $categories ) ) {?>
         </div>
 
         <div class="estilo-titulos-single">
-          <div class="col-md-12 col-sm-12 col-lg-12 letras-titulos">
-            <h4 class="noticias-letrero">Lo Nuevo</h4>
+          <div class="col-md-12 col-sm-12 col-lg-12">
+            <h4 class="noticias-letrero"><i class="fas fa-hand-holding-heart"></i> Lo Nuevo</h4>
           </div>
         </div>
       <?php $int = 1;
@@ -127,7 +130,7 @@ if ( ! empty( $categories ) ) {?>
         <a href="<?php the_permalink(); ?>">
           <div class="crop" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>')"></div>
         </a>
-        <div class="categoria-post-home verde">
+        <div class="categoria-post-home rosado">
           <?php  echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';?>
         </div>
         <div class="card-body card-text">

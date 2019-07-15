@@ -10,7 +10,7 @@
   <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url');?>/css/generals.css">
   <link rel="icon" type="imagen.png" href="<?php bloginfo('template_url');?>/images/logos/favicon.png" sizes="64x64">
   <!-- Fuentes -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed+Domine" rel="stylesheet">
   <title><?php bloginfo('name')?></title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122847204-1"></script>
