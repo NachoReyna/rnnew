@@ -3,10 +3,10 @@
     <?php $int = 1;
       $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
       $args = array(
-        'order'   => 'DESC',
-        'category_name' => 'noticias',
-        'post_status'=>'publish',
-        'paged' => $paged,
+        'order'          => 'DESC',
+        'post_type'      => 'post',
+        'post_status'    =>'publish',
+        'paged'          => $paged,
         'posts_per_page' => 6
       );
       $homeProductos = new WP_Query( $args );?>

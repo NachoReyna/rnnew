@@ -25,11 +25,12 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <body id="RockNside">
   <?php include('include/page-banner.php') ?>
-    <header id="header" class="sticky-top shadow-sm letras-header">
+    <header id="header" class="sticky-top shadow-sm letras-header" style="background-image: url('<?php bloginfo('template_url');?>/images/logos/banner-billetes.png');
+">
       <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container">
               <a class="navbar-brand" href="<?php bloginfo('url');?>">
-                <img src="<?php bloginfo('template_url');?>/images/logos/logoRockNsideSombra.png" alt="Logo RockNside" class="tamano-logo">
+                <img src="<?php bloginfo('template_url');?>/images/logos/rocknside_01_blanco.png" alt="Logo RockNside" class="tamano-logo">
               </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
