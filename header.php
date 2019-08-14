@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
   <meta charset="UTF-8">
+   <?php
+  	if( is_home() ){
+          $image = 'https://rocknside.com/wp-content/themes/rnnew/images/logos/logoRockNsideSombra.png';
+		}else{
+			if( have_posts() ) :
+				while( have_posts() ) :
+					the_post();
+					$image = get_the_post_thumbnail_url();
+				endwhile;
+			endif;
+		}
+  ?>
   <!-- Facebook tagging -->
   <meta property="fb:pages" content="302990876817991" />
+  <meta property="og:image" content="<?php echo $image; ?> " />
   <!-- End Facebook Tagging -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url');?>/css/bootstrap.min.css">
