@@ -22,7 +22,6 @@
   <link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url');?>/css/generals.css">
   <link rel="icon" type="imagen.png" href="<?php bloginfo('template_url');?>/images/logos/favicon.png" sizes="64x64">
   <!-- Fuentes -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed+Domine" rel="stylesheet">
   <title><?php bloginfo('name')?></title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122847204-1"></script>
@@ -37,38 +36,49 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <body id="RockNside">
   <?php include('include/page-banner.php') ?>
-    <header id="header" class="sticky-top shadow-sm letras-header" style="background-image: url('<?php bloginfo('template_url');?>/images/logos/banner-billetes.png');
-">
+    <header id="header" class="sticky-top shadow letras-header pt-2 pb-2">
       <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="container">
-              <a class="navbar-brand" href="<?php bloginfo('url');?>">
-                <img src="<?php bloginfo('template_url');?>/images/logos/rocknside_01_blanco.png" alt="Logo RockNside" class="tamano-logo">
+          <div class="container-fluid">
+          <div class="ml-auto">
+            <a class="navbar-brand" href="<?php bloginfo('url');?>">
+                <img src="<?php bloginfo('template_url');?>/images/logos/rockinside_arreglado.png" alt="Logo RockNside" class="tamano-logo">
               </a>
+          </div>      
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>          
           </button>
             <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav ml-auto tipo-letra estilo-menu-desplegable">
+              <ul class="navbar-nav m-auto tipo-letra estilo-menu-desplegable">
                 <li class="nav-item active">
-                  <a class="nav-link" href="<?php bloginfo('url');?>"><i class="fas fa-home"></i> Inicio</a>
+                  <a class="nav-link" href="<?php bloginfo('url');?>"> Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="<?php bloginfo('url');?>/noticias"><i class="far fa-newspaper"></i> Noticias</a>
+                  <a class="nav-link pl-2 pr-2" href="<?php bloginfo('url');?>/noticias"> Noticias</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?php bloginfo('url');?>/musica"><i class="fas fa-headphones-alt"></i> Música</a>
+                <li class="nav-item pl-2 pr-2">
+                  <a class="nav-link" href="<?php bloginfo('url');?>/musica"> Música</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?php bloginfo('url');?>/cine"><i class="fas fa-film"></i> Cine</a>
+                <li class="nav-item pl-2 pr-2">
+                  <a class="nav-link" href="<?php bloginfo('url');?>/cine"> Cine</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?php bloginfo('url');?>/cultura"><i class="fas fa-hand-holding-heart"></i> Cultura</a>
+                <li class="nav-item pl-2 pr-2">
+                  <a class="nav-link" href="<?php bloginfo('url');?>/cultura"> Cultura</a>
                 </li>
-                 <li class="nav-item">
-                  <a class="nav-link" href="<?php bloginfo('url');?>/blog"><i class="fab fa-blogger-b"></i> Blog</a>
+                 <li class="nav-item pl-2 pr-2">
+                  <a class="nav-link" href="<?php bloginfo('url');?>/blog"> Blog</a>
+                </li>
+                <li class="nav-item pl-2 pr-2">
+                  <a class="nav-link" href="<?php bloginfo('url');?>/blog"> RockNside Crew</a>
+                </li>
+                <li class="nav-item pl-2 pr-2">
+                  <a class="nav-link" href="<?php bloginfo('url');?>/blog"> RockNside Merch</a>
                 </li>
               </ul>
+          </div>
+          <div class="mr-auto">
+            <a href=""><i class="fas fa-user-friends fa-1x"></i></a>
+            <a href=""><i class="fas fa-shopping-bag fa-1x"></i></a>
           </div>
       </nav>
     </header>

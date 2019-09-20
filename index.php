@@ -1,11 +1,6 @@
 <?php get_header();?>
-<section id="section-slide-inicio">
-  <div class="container">
-    <?php include('include/page-slide.php'); ?>
-  </div>
-</section>
   <?php include('include/page-publicidad.php'); ?>
-<section>
+<section class="">
   <div class="container">
     <div class="titulos-index-section">
       <h1 class="verde"><span class="verde"><i class="far fa-newspaper"></i> Noticias</span></h1>
@@ -16,6 +11,7 @@
     <?php include('include/page-news.php'); ?>
 </section>
 <section>
+  <?php include('include/page-publicidad.php'); ?>
   <div class="container">
     <div class="titulos-index-section">
       <h1 class="rosado"><span class="rosado"><i class="fas fa-headphones-alt"></i> Nuevas propuestas</span></h1>
@@ -25,17 +21,17 @@
 <section id="section-noticias">
     <?php include('include/page-bandas.php'); ?>
 </section>
-  <?php include('include/page-publicidad.php'); ?>
-  <section>
+<section>
   <div class="container">
     <div class="titulos-index-section">
-      <h1 class="morado"><span class="morado"><i class="fas fa-film"></i>  Cine</span></h1>
+      <h1 class="morado"><span class="morado"><i class="fas fa-film"></i> Cine</span></h1>
     </div>
   </div>
 </section>
 <section id="section-musica">
-      <?php include('include/page-cine.php'); ?>
+  <?php include('include/page-cine.php'); ?>
 </section>
+  <?php include('include/page-publicidad.php'); ?>
   <section>
   <div class="container">
     <div class="titulos-index-section">
