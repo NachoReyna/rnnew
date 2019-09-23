@@ -1,5 +1,4 @@
 <div id="footer">
-  <div class="imagen-parallax" style="background-image: url(' <?php bloginfo('template_url');?>/images/youtube/ampli.jpg');"></div>
   <footer class="footer estilo-footer pt-3 pb-3">
     <div class="container">
       <div class="row">

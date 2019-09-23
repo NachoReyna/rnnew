@@ -1,36 +1,54 @@
 #RockNside {
-@media(max-width : 768px){
-	.estilo-menu-desplegable {
-		font-size: 25px;
-	}
-}
+  @media(max-width : 991px) {
+    .redes-header {
+      display: none;
+    }
 
-@media(max-width : 375px){
+    .logos {
+      display: none;
+    }
 
-	.item{
-    height:auto;
-		}
-		#contenido-post {
-			.contenedor-texto {
-				font-size: 1.3em;
-				text-align: justify;
-			}
-		}
+    .logo-mobile {
+      display: inline;
+    }
+  }
 
-  #section-slide-inicio{
-		.titulos-banner{	
-		top: 10vh;
-		a{			
-			font-size: 20px;
-		}
-	}
-}
-#contenido-post {
-	.estilo-titulo-principal{
-    h1{
-			font-size: 35px;
+  @media(max-width : 768px) {
+    .estilo-menu-desplegable {
+      font-size: 25px;
+    }
+  }
+
+  @media(max-width : 375px) {
+
+
+    .item {
+      height: auto;
+    }
+
+    #contenido-post {
+      .contenedor-texto {
+        font-size: 1.3em;
+        text-align: justify;
       }
-			}
-		}
-	}
+    }
+
+    #section-slide-inicio {
+      .titulos-banner {
+        top: 10vh;
+
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+
+    #contenido-post {
+      .estilo-titulo-principal {
+        h1 {
+          font-size: 35px;
+        }
+      }
+    }
+  }
 }

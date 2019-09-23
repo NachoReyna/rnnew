@@ -1,5 +1,9 @@
 #RockNside {
 
+  .logo-mobile {
+    display: none;
+  }
+
   .imagen-publicidad {
     img {
       width: 100%;
@@ -16,11 +20,11 @@
   }
 
   .titulos-secciones {
+    top: 50px;
+    z-index: 100;
     position: absolute;
     text-align: center;
     color: @blancoRockNside;
-    z-index: 100;
-    top: 50px;
 
     h1 {
       font-size: 50px;
@@ -185,7 +189,11 @@
     height: 200px;
     overflow: hidden;
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
+
+    &.crop-single {
+      height: 150px !important;
+    }
   }
 
   .imagen-principal {
@@ -231,26 +239,61 @@
     }
   }
 
+  .card-text-alternado {
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: @negroRockNside;
+    font-family: @tarjetasHomeNotas;
+
+    a {
+      padding: 2px;
+      color: @negroRockNside;
+      text-transform: uppercase;
+      text-decoration-color: @rojoRockNside;
+    }
+
+    p {
+      font-size: 12px;
+      color: @negroRockNside;
+      text-decoration-color: @rojoRockNside;
+
+      &.sinborde-single {
+        margin: 0;
+      }
+    }
+
+    &.card-text-singles {
+      font-size: 12px !important;
+    }
+  }
+
   #header {
     background: @blancoRockNside;
 
     a {
-      color: @negroRockNside;
       font-weight: 400;
+      letter-spacing: -1px;
+      color: @negroRockNside;
       font-size: @fontHeader;
       font-family: @fuenteHeader;
     }
 
     .sticky-top {
-      position: -webkit-sticky;
-      position: sticky;
       top: 0;
       z-index: 1020;
+      position: sticky;
+      position: -webkit-sticky;
     }
 
     .navbar-toggler {
-      color: @blancoRockNside;
-      border: 2px solid @blancoRockNside;
+      font-size: 17px;
+      color: @negroRockNside;
+      border: 1px solid @negroRockNside;
     }
 
     .nav-item:hover {
@@ -336,11 +379,12 @@
     }
 
     .noticias-letrero {
-      font-size: 15px;
-      font-family: 'Roboto Condensed', sans-serif;
-      background: @rojoRockNside;
       padding: 5px;
+      font-size: 15px;
       color: @blancoRockNside;
+      background: @rojoRockNside;
+      font-family: 'Roboto Condensed', sans-serif;
+
     }
 
     .videos-youtube {
@@ -373,7 +417,7 @@
         margin-left: 5px;
         line-height: 2.5;
         font-size: 16px;
-        color: @negroRockNside;
+        color: @blancoRockNside;
         text-decoration: none;
       }
 

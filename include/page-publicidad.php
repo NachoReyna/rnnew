@@ -8,7 +8,7 @@
       <?php $link_red = get_field('link-red'); ?>
       <div class="container imagen-publicidad">
          <div class="row">
-            <div class="col-md-12 text-center mt-4 mb-4">
+            <div class="col-md-12 text-center mt-2 mb-2">
                <a href="<?php echo $link_red; ?>" target="_blank">
                   <img src="<?php echo get_the_post_thumbnail_url();?>" alt="" class="img-fluid">
                </a>

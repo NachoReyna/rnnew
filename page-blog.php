@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Cultura */
+/* Template Name: Blog */
 get_header();?>
 <section id="noticias">
   <div class="container mt-3">
@@ -17,7 +17,7 @@ get_header();?>
       $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
       $args = array(
         'order'   => 'DESC',
-        'category_name' => 'cultura',
+        'category_name' => 'blog',
         'paged' => $paged,
         'posts_per_page' => -1
       );

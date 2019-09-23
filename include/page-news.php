@@ -7,7 +7,7 @@
         'post_type'      => 'post',
         'post_status'    =>'publish',
         'paged'          => $paged,
-        'posts_per_page' => 6
+        'posts_per_page' => 9
       );
       $homeProductos = new WP_Query( $args );?>
     <?php if( $homeProductos->have_posts() ): ?>

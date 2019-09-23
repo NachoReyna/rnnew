@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
    <?php
   	if( is_home() ){
-          $image = 'https://rocknside.com/wp-content/themes/rnnew/images/logos/logoRockNsideSombra.png';
+          $image = 'https://rocknside.com/wp-content/themes/rnnew/images/logos/rockinside_arreglado.png';
 		}else{
 			if( have_posts() ) :
 				while( have_posts() ) :
@@ -38,21 +38,23 @@
   <?php include('include/page-banner.php') ?>
     <header id="header" class="sticky-top shadow letras-header pt-2 pb-2">
       <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="container-fluid">
-          <div class="ml-auto">
+        <div class="container">
+          <div class="ml-auto logos">
             <a class="navbar-brand" href="<?php bloginfo('url');?>">
-                <img src="<?php bloginfo('template_url');?>/images/logos/rockinside_arreglado.png" alt="Logo RockNside" class="tamano-logo">
-              </a>
+              <img src="<?php bloginfo('template_url');?>/images/logos/rockinside_arreglado.png" alt="Logo RockNside" class="tamano-logo">
+            </a>
           </div>      
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>          
           </button>
+          <div class="m-auto logo-mobile">
+            <a class="navbar-brand" href="<?php bloginfo('url');?>">
+              <img src="<?php bloginfo('template_url');?>/images/logos/rockinside_arreglado.png" alt="Logo RockNside" class="tamano-logo">
+            </a>
+          </div> 
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav m-auto tipo-letra estilo-menu-desplegable">
-                <li class="nav-item active">
-                  <a class="nav-link" href="<?php bloginfo('url');?>"> Inicio</a>
-                </li>
                 <li class="nav-item">
                   <a class="nav-link pl-2 pr-2" href="<?php bloginfo('url');?>/noticias"> Noticias</a>
                 </li>
@@ -60,25 +62,27 @@
                   <a class="nav-link" href="<?php bloginfo('url');?>/musica"> Música</a>
                 </li>
                 <li class="nav-item pl-2 pr-2">
+                  <a class="nav-link" href="<?php bloginfo('url');?>/cultura"> Cultura</a>
+                </li>
+                <li class="nav-item pl-2 pr-2">
                   <a class="nav-link" href="<?php bloginfo('url');?>/cine"> Cine</a>
                 </li>
                 <li class="nav-item pl-2 pr-2">
-                  <a class="nav-link" href="<?php bloginfo('url');?>/cultura"> Cultura</a>
-                </li>
-                 <li class="nav-item pl-2 pr-2">
                   <a class="nav-link" href="<?php bloginfo('url');?>/blog"> Blog</a>
                 </li>
                 <li class="nav-item pl-2 pr-2">
-                  <a class="nav-link" href="<?php bloginfo('url');?>/blog"> RockNside Crew</a>
+                  <a class="nav-link" href="<?php bloginfo('url');?>/Nosotros"> RockNside Crew</a>
                 </li>
-                <li class="nav-item pl-2 pr-2">
+                <!--li class="nav-item pl-2 pr-2">
                   <a class="nav-link" href="<?php bloginfo('url');?>/blog"> RockNside Merch</a>
-                </li>
+                </li-->
               </ul>
           </div>
-          <div class="mr-auto">
-            <a href=""><i class="fas fa-user-friends fa-1x"></i></a>
-            <a href=""><i class="fas fa-shopping-bag fa-1x"></i></a>
+          <div class="mr-auto redes-header">
+            <a href="https://www.youtube.com/channel/UChuJ8tUHixvQj8R1l-jadAg?sub_confirmation=1" target="_blank"><i class="fab fa-youtube fa-1x pl-1 pr-1"></i></a>
+            <a href="https://www.facebook.com/RockNside/" target="_blank"><i class="fab fa-facebook-square fa-1x pl-1 pr-1"></i></a>
+            <a href="https://www.instagram.com/rocknside" target="_blank"><i class="fab fa-instagram fa-1x pl-1 pr-1"></i></a>
+            <a href="https://twitter.com/rocknside" target="_blank"><i class="fab fa-twitter fa-1x pl-1 pr-1"></i></a>
           </div>
       </nav>
     </header>

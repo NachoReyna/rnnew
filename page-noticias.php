@@ -30,7 +30,7 @@ get_header();?>
             <a href="<?php the_permalink(); ?>">
               <div class="crop" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>')"></div>
             </a>
-            <div class="card-body card-text">
+            <div class="card-body card-text-alternado">
               <a class="text-titulo-notas" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
               <p class="text-parr"> <?php echo the_date(); ?>  </p>
             </div>
